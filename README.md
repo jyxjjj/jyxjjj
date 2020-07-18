@@ -2,11 +2,29 @@
 
 ## About Me
 
-Name: ShenLin
-
-An entire IT department.
+Name: ShenLin(神林)
 
 Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
+
+Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Technology Evolvement Co.,Ltd.)
+
+Company: ShenZhen DeRui Network Tech.,Co.,Ltd.
+
+Company History: NanJing ShiDaiYunCheng Network Technology Evolvement Co.,Ltd. (Part of PSBC SuZhou Branch)
+
+### Description
+
+I am ShenLin, the CEO of DESMG.
+
+I am not a developer, I am an entire IT department.
+
+I use PHP, C#, C, Go, NodeJS, Java, Python and so on.
+
+I like Singing, Video Gaming, and of course, girls.
+
+I like stay up late.
+
+I am lazy enough.
 
 ## Sites
 
@@ -17,6 +35,8 @@ Blog: [DE-Blog](https://blog.desmg.com)
 QQ: [773933146](http://wpa.qq.com/msgrd%3fv%3d3%26uin%3d773933146%26site%3dqq%26menu%3dyes)
 
 Mail: [773933146@qq.com](mailto:773933146@qq.com)
+
+Mail: [admin@desmg.com](mailto:admin@desmg.com)
 
 Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
