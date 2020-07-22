@@ -15,8 +15,18 @@ You can find more infomation from my [Curriculum Vitae](https://github.desmg.com
 ### Description
 
 I am ShenLin, the CEO of DESMG.
+
 I am not a developer, I am an entire IT department.
-I use PHP, C#, C, Go, NodeJS, Java, Python and so on.
+I use:
+- PHP, Think, Laravel
+- C#, C, OpenSSL, CURL
+- Java, Spring, JNA
+- Go, Python
+- NodeJS, Angular, SASS
+- Aliyun, ECS, VPC, EIP, DM, VPN, CDN, NAS, OSS
+- Windows, Linux, Nginx, MySQL, Redis
+- Git, SVN
+
 I like Singing, Video Gaming, and of course, girls.
 I like [Marvel](https://www.marvel.com) more than Detective.
 I like dogs, cats, hamsters, but i am allergic to dog hair and cat hair.
