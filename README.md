@@ -18,18 +18,18 @@ I am ShenLin, the CEO of DESMG.
 
 I am not a developer, I am an entire IT department.
 I use:
-- PHP, Think, Laravel
-- C#, C, OpenSSL, CURL
+- [PHP](https://www.php.net), [Think](https://github.com/top-think), [Laravel](https://laravel.com/)
+- C#, C, [OpenSSL](https://www.openssl.org/), [CURL](https://github.com/curl/curl)
 - Java, Spring, JNA
-- Go, Python
-- NodeJS, Angular, SASS
-- Aliyun, ECS, VPC, EIP, DM, VPN, CDN, NAS, OSS
-- Windows, Linux, Nginx, MySQL, Redis
-- Git, SVN
+- [Go](https://golang.org/), [Python](https://www.python.org/)
+- [NodeJS](https://nodejs.org/en/), [Angular](https://angular.io/), SASS
+- [Aliyun](https://www.alibabacloud.com/en), ECS, VPC, EIP, DM, VPN, CDN, NAS, OSS
+- Windows, [Linux](https://getfedora.org/), [Nginx](http://nginx.org/), [MySQL](https://www.mysql.com/), [Redis](https://redis.io/)
+- [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
 
-I like Singing, Video Gaming, and of course, girls.
-I like [Marvel](https://www.marvel.com) more than Detective.
-I like dogs, cats, hamsters, but i am allergic to dog hair and cat hair.
+I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming[1](https://www.blizzard.com/)[2](https://store.steampowered.com), and of course, girls.
+I like [Marvel](https://www.marvel.com) more than [Detective](https://www.dccomics.com).
+I like dogs, cats, hamsters(https://en.wikipedia.org/wiki/Hamster), but i am allergic to dog hair and cat hair.
 I like stay up late.
 I am lazy enough.
 
@@ -55,7 +55,7 @@ Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
 ## Copyright
 
-Copyright &copy; 2020 DESMG All Rights Reserved. 
+Copyright &copy; 2020 [DESMG](https://www.desmg.com) All Rights Reserved. 
 
 ## LICENSE
 
