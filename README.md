@@ -27,7 +27,7 @@ I use:
 - Windows, [Linux](https://getfedora.org/), [Nginx](http://nginx.org/), [MySQL](https://www.mysql.com/), [Redis](https://redis.io/)
 - [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
 
-I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming[1](https://www.blizzard.com/)[2](https://store.steampowered.com), and of course, girls.
+I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming([1](https://www.blizzard.com/))([2](https://store.steampowered.com)), and of course, girls.
 I like [Marvel](https://www.marvel.com) more than [Detective](https://www.dccomics.com).
 I like dogs, cats, hamsters(https://en.wikipedia.org/wiki/Hamster), but i am allergic to dog hair and cat hair.
 I like stay up late.
