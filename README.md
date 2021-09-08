@@ -4,6 +4,8 @@
 
 Name: ShenLin
 
+GPG: ################
+
 Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
 
 Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Technology Evolvement Co.,Ltd.)
@@ -23,8 +25,8 @@ I use:
 - Java, Spring, JNA
 - [Go](https://golang.org/), [Python](https://www.python.org/)
 - [NodeJS](https://nodejs.org/en/), [Angular](https://angular.io/), SASS
-- [Aliyun](https://www.alibabacloud.com/en), ECS, VPC, EIP, DM, VPN, CDN, NAS, OSS
-- Windows, [Linux](https://getfedora.org/), [Nginx](http://nginx.org/), [MySQL](https://www.mysql.com/), [Redis](https://redis.io/)
+- [Aliyun](https://www.alibabacloud.com/en), ECS, VPC, EIP, VPN, CDN, NAS, OSS
+- MacOS, [Linux](https://getfedora.org/), Windows, [Nginx](https://nginx.org/), [MariaDb](https://mariadb.org/), [Redis](https://redis.io/)
 - [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
 
 I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming([1](https://www.blizzard.com/))([2](https://store.steampowered.com)), and of course, girls.
@@ -59,4 +61,4 @@ Copyright &copy; 2020 [DESMG](https://www.desmg.com) All Rights Reserved.
 
 ## LICENSE
 
-<img src="http://www.gnu.org/graphics/gpl-v3-logo.svg" alt="GNU GPL VERSION 3(GPL-3.0-only)" height="256" align="center">
+<img src="https://www.gnu.org/graphics/gpl-v3-logo.svg" alt="GNU GPL VERSION 3(GPL-3.0-only)" height="256" align="center">
