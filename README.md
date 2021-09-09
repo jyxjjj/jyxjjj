@@ -4,7 +4,12 @@
 
 Name: ShenLin
 
-GPG: ################
+GPG: ```A86F2BF9569C54D0```
+
+Fingerprint:
+
+> 3952 A032 D0C4 CB81 A9D7
+> B606 A86F 2BF9 569C 54D0
 
 Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
 
