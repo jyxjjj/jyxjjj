@@ -4,14 +4,6 @@
 
 Name: ShenLin
 
-GPG: ```A86F2BF9569C54D0```
-
-Fingerprint:
-
-> 3952 A032 D0C4 CB81 A9D7
-> 
-> B606 A86F 2BF9 569C 54D0
-
 Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
 
 Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Technology Evolvement Co.,Ltd.)
@@ -54,6 +46,26 @@ Mail: [773933146@qq.com](mailto:773933146@qq.com)
 Mail: [admin@desmg.com](mailto:admin@desmg.com)
 
 Telegram: [@jyxjjj](https://t.me/jyxjjj)
+
+## GPG
+
+Main: ```A86F2BF9569C54D0```
+
+Full: ```3952A032D0C4CB81A9D7B606A86F2BF9569C54D0```
+
+> 3952 A032 D0C4 CB81 A9D7 B606 A86F 2BF9 569C 54D0
+
+Signature: ```3B0AB158FBCFDCD7```
+
+> 7E9C 5103 CD61 8E54 C134  36EA 3B0A B158 FBCF DCD7
+
+Encryption: ```5233A7C8F833A231```
+
+> 7D9B AE16 FDDC 17CD AE1E  F110 5233 A7C8 F833 A231
+
+Authentication: ```B9289D34BF88C965```
+
+> 3667 EC47 B45C C0A0 3E85  5772 B928 9D34 BF88 C965
 
 ## Donate
 
