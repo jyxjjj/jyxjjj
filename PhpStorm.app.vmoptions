@@ -15,7 +15,7 @@
 -XX:ErrorFile=$USER_HOME/java_error_in_phpstorm_%p.log
 -XX:HeapDumpPath=$USER_HOME/java_error_in_phpstorm.hprof
 -Dide.no.platform.update=true
--Didea.config.path=~/www/JetBrains/PhpStorm/config
--Didea.system.path=~/www/JetBrains/PhpStorm/system
--Didea.plugins.path=~/www/JetBrains/PhpStorm/config/plugins
--Didea.log.path=~/www/JetBrains/PhpStorm/system/log
+-Didea.config.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config
+-Didea.system.path=/Users/jyxjjj/www/JetBrains/PhpStorm/system
+-Didea.plugins.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config/plugins
+-Didea.log.path=/Users/jyxjjj/www/JetBrains/PhpStorm/system/log
