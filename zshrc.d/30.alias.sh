@@ -1,0 +1,7 @@
+alias ls='ls -a'
+alias ll='ls -al'
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
+alias ssh='ssh -2 -4'
+alias zshrc='code ~/.zshrc'

@@ -1,0 +1,29 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = false
+	filemode = false
+	bare = false
+	repositoryformatversion = 0
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[tag]
+    forceSignAnnotated = true
+[color]
+    ui = auto
+[init]
+	defaultBranch = main
+[user]
+	name = jyxjjj
+	email = 773933146@qq.com
+	signingKey = A86F2BF9569C54D0
+[commit]
+	gpgSign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	rebase = true
