@@ -5,6 +5,8 @@ cp -r ~/zshrc.d/* ~/www/wwwroot/Git/user/zshrc.d
 
 cp ~/.ssh/config ~/www/wwwroot/Git/user/.ssh/config
 
+cp ~/.config/aria2/aria2.conf ~/www/wwwroot/Git/user/.config/aria2/aria2.conf
+
 cp ~/.gnupg/gpg-agent.conf ~/www/wwwroot/Git/user/.gnupg/gpg-agent.conf
 cp ~/.gnupg/gpg.conf ~/www/wwwroot/Git/user/.gnupg/gpg.conf
 cp ~/.gnupg/dirmngr.conf ~/www/wwwroot/Git/user/.gnupg/dirmngr.conf
