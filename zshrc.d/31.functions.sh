@@ -27,8 +27,9 @@ function tbw() {
     echo $str
 }
 
-function ip() {
-    echo "Internet:                                   $(curl -s https://www.desmg.com/api/ip)"
+function listip() {
+    echo "Internet:                                   $(curl -s https://api.ipify.org)"
+    echo "Internet:                                   $(curl -s https://api6.ipify.org)"
     echo "en0(Ethernet)         (14:98:77:47:c5:07):  $(ipconfig getifaddr en0)"
     echo "en1(Wi-Fi)            (14:98:77:5f:86:4f):  $(ipconfig getifaddr en1)"
     echo "en2(Thunderbolt 1)    (36:cf:8b:2d:89:84):  $(ipconfig getifaddr en2)"
