@@ -10,7 +10,7 @@ Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Techno
 
 Company: ShenZhen DeRui Network Tech.,Co.,Ltd.
 
-You can find more infomation from my [Curriculum Vitae](https://github.desmg.com/Curriculum-Vitae-By-Google-Material-Design/).
+You can find more infomation from my [Curriculum Vitae(downgrade into demo mode)](https://github.desmg.com/Curriculum-Vitae-By-Google-Material-Design/).
 
 ### Description
 
@@ -39,7 +39,7 @@ Blog: [DE-Blog](https://blog.desmg.com)
 
 ## Contact
 
-Mail: [773933146@qq.com](mailto:773933146@qq.com)
+Mail: [773933146@qq.com](mailto:773933146@qq.com) (This will be used less and less.)
 
 Mail: [admin@desmg.com](mailto:admin@desmg.com)
 
