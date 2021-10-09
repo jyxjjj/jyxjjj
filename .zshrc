@@ -19,6 +19,8 @@ source ~/zshrc.d/31.functions.sh
 
 source ~/zshrc.d/50.gpg.sh
 
-source ~/zshrc.d/99.php.sh
+source ~/zshrc.d/60.php.sh
+
+source ~/zshrc.d/99.chpwd.sh
 
 export PROMPT
