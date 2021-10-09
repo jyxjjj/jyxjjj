@@ -39,8 +39,6 @@ Blog: [DE-Blog](https://blog.desmg.com)
 
 ## Contact
 
-QQ: [773933146](http://wpa.qq.com/msgrd%3fv%3d3%26uin%3d773933146%26site%3dqq%26menu%3dyes)
-
 Mail: [773933146@qq.com](mailto:773933146@qq.com)
 
 Mail: [admin@desmg.com](mailto:admin@desmg.com)
@@ -69,9 +67,7 @@ Authentication: ```B9289D34BF88C965```
 
 ## Donate
 
-|Alipay|WeChat Pay|Mobile QQ Tenpay|
-|:----:|:----:|:----:|
-|<img src="resources/images/alipay.png" alt="Alipay QRCode" height="128" width="128" align="center">|<img src="resources/images/wxpay.png" alt="WeChat Pay QRCode" height="128" width="128" align="center">|<img src="resources/images/tenpay.png" alt="Mobile QQ Tenpay QRCode" height="128" width="128" align="center">|
+Alipay <img src="resources/images/alipay.png" alt="Alipay QRCode" height="128" width="128" align="center">
 
 ## Copyright
 
