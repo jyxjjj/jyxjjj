@@ -63,7 +63,7 @@ function sshc(){
             ;;
         *)
             ;;
-    esac
+    esac 
     case "$4" in
         3306)
             sshcmd+=' -L 127.0.0.1:3306:127.0.0.1:3306'
