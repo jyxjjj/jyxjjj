@@ -7,6 +7,10 @@ function writedefaults() {
     defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE
 }
 
+function title() {
+    echo "\033]0;${1}\007\c"
+}
+
 function path() {
     echo '\033[32mContent of /etc/paths:\033[0m'
     cat /etc/paths
