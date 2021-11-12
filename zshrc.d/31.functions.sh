@@ -42,3 +42,8 @@ function listip() {
     echo "en5(Ethernet Adaptor) (1e:00:33:3c:c8:55):  $(ipconfig getifaddr en5)"
     echo "en6(Bluetooth PAN)    (14:98:77:4a:59:9a):  $(ipconfig getifaddr en6)"
 }
+
+function rmDSStore () {
+    sudo find / -name '.DS_Store' -delete 2>/dev/null
+    sudo find / -name '._.DS_Store' -delete 2>/dev/null
+}
