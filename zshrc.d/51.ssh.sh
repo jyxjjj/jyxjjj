@@ -5,16 +5,16 @@ function sshc(){
             sshcmd='ssh root@www.desmg.com -R 127.0.0.1:7890:127.0.0.1:7890'
             ;;
         local)
-            sshcmd='ssh root@local.desmg.com -R 127.0.0.1:7890:127.0.0.1:7890'
+            sshcmd='ssh root@local.desmg.com'
             ;;
         local6)
-            sshcmd='ssh root@local.desmg.com -p 6001 -R 127.0.0.1:7890:127.0.0.1:7890'
+            sshcmd='ssh root@local.desmg.com -p 6001'
             ;;
         fedora)
-            sshcmd='ssh root@Fedora -R 127.0.0.1:7890:127.0.0.1:7890'
+            sshcmd='ssh root@Fedora'
             ;;
         mmp)
-            sshcmd='ssh root@mmp -R 127.0.0.1:7890:127.0.0.1:7890'
+            sshcmd='ssh root@mmp'
             ;;
         mp-test)
             sshcmd='ssh root@mp-test'
