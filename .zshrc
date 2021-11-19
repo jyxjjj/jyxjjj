@@ -21,8 +21,6 @@ source ~/zshrc.d/31.functions.sh
 source ~/zshrc.d/50.gpg.sh
 source ~/zshrc.d/51.ssh.sh
 
-source ~/zshrc.d/55.ca.sh
-
 source ~/zshrc.d/60.php.sh
 
 source ~/zshrc.d/99.chpwd.sh
