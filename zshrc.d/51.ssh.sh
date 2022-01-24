@@ -5,7 +5,7 @@ function sshc(){
             sshcmd='ssh root@www.desmg.com -R 127.0.0.1:7890:127.0.0.1:7890'
             ;;
         local)
-            sshcmd='ssh root@local.desmg.com'
+            sshcmd='ssh root@local.desmg.com -p 7010'
             ;;
         local6)
             sshcmd='ssh root@local.desmg.com -p 6001'
