@@ -13,7 +13,6 @@ source ~/zshrc.d/10.git.sh
 
 source ~/zshrc.d/20.homebrew.sh
 source ~/zshrc.d/21.nvm.sh
-source ~/zshrc.d/22.java.sh
 
 source ~/zshrc.d/30.alias.sh
 source ~/zshrc.d/31.functions.sh
