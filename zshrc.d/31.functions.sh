@@ -44,8 +44,8 @@ function listip() {
 }
 
 function rmDSStore () {
-    sudo find / -name '.DS_Store' -delete 2>/dev/null
-    sudo find / -name '._.DS_Store' -delete 2>/dev/null
+    sudo find . -name '.DS_Store' -delete 2>/dev/null
+    sudo find . -name '._.DS_Store' -delete 2>/dev/null
 }
 
 function webp2png(){
