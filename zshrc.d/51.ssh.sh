@@ -19,6 +19,9 @@ function sshc(){
         mp-test)
             sshcmd='ssh root@mp-test'
             ;;
+        mp-release)
+            sshcmd='ssh jiyuxuan@mp-release'
+            ;;
         asus)
             sshcmd='ssh root@AX88U'
             ;;
