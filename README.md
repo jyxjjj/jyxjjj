@@ -12,6 +12,8 @@ Company: ShenZhen DeRui Network Tech.,Co.,Ltd.
 
 You can find more infomation from my [Curriculum Vitae(downgrade into demo mode)](https://github.desmg.com/Curriculum-Vitae-By-Google-Material-Design/).
 
+See [Github Gist](https://gist.github.com/jyxjjj)
+
 ### Description
 
 I am ShenLin, the CEO of DESMG.
