@@ -1,6 +1,7 @@
 autoload -U colors && colors
 
 setopt histignoredups
+setopt histignorealldups
 setopt appendhistory
 setopt sharehistory
 setopt promptsubst

@@ -12,9 +12,9 @@
 	ignorecase = true
 	precomposeunicode = true
 [tag]
-    forceSignAnnotated = true
+	forceSignAnnotated = true
 [color]
-    ui = auto
+	ui = auto
 [init]
 	defaultBranch = main
 [user]
@@ -27,3 +27,9 @@
 	program = /usr/local/bin/gpg
 [pull]
 	rebase = true
+[alias]
+	a = "!git add ."
+	c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+	d = "!git diff"
+	p = "!git push"
+	s = "!git status"
