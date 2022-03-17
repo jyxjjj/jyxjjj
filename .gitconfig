@@ -33,3 +33,4 @@
 	d = "!git diff"
 	p = "!git push"
 	s = "!git status"
+	acp = "!git add . && git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
