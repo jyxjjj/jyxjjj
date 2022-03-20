@@ -55,14 +55,8 @@ function filehash () {
 }
 
 function flushdns () {
-    sudo killall mDNSResponderHelper
     sudo killall -INFO mDNSResponder
     sudo killall -HUP mDNSResponder
-    sudo killall -INFO mDNSResponder
-    sudo killall -HUP mDNSResponder
-    sudo killall -INFO mDNSResponder
-    sudo killall mDNSResponderHelper
-    sudo dscacheutil -flushcache
     sudo killall -INFO mDNSResponder
     sudo killall -HUP mDNSResponder
     sudo killall -INFO mDNSResponder
