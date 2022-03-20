@@ -53,3 +53,19 @@ function filehash () {
     sha256 $1
     sha512 $1
 }
+
+function flushdns () {
+    sudo killall mDNSResponderHelper
+    sudo killall -INFO mDNSResponder
+    sudo killall -HUP mDNSResponder
+    sudo killall -INFO mDNSResponder
+    sudo killall -HUP mDNSResponder
+    sudo killall -INFO mDNSResponder
+    sudo killall mDNSResponderHelper
+    sudo dscacheutil -flushcache
+    sudo killall -INFO mDNSResponder
+    sudo killall -HUP mDNSResponder
+    sudo killall -INFO mDNSResponder
+    sudo killall mDNSResponderHelper
+    sudo dscacheutil -flushcache
+}
