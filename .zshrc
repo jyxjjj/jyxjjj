@@ -22,7 +22,6 @@ source ~/zshrc.d/50.gpg.sh
 source ~/zshrc.d/51.ssh.sh
 
 source ~/zshrc.d/60.php.sh
-source ~/zshrc.d/61.go.sh
 
 source ~/zshrc.d/99.chpwd.sh
 
