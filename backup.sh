@@ -15,3 +15,5 @@ cp ~/.gitconfig ~/www/wwwroot/Git/user/.gitconfig
 cp ~/.npmrc ~/www/wwwroot/Git/user/.npmrc
 
 cp ~/www/JetBrains/PhpStorm.app.vmoptions ~/www/wwwroot/Git/user/PhpStorm.app.vmoptions
+
+code .
