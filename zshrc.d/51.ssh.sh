@@ -13,8 +13,8 @@ function sshc(){
         fedora)
             sshcmd='ssh root@Fedora'
             ;;
-        mmp)
-            sshcmd='ssh root@mmp'
+        telegram)
+            sshcmd='ssh root@telegram'
             ;;
         mp-test)
             sshcmd='ssh root@mp-test'
