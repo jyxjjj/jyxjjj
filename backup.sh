@@ -8,7 +8,6 @@ cp ~/.ssh/config ~/www/wwwroot/Git/user/.ssh/config
 cp ~/.gnupg/gpg-agent.conf ~/www/wwwroot/Git/user/.gnupg/gpg-agent.conf
 cp ~/.gnupg/gpg.conf ~/www/wwwroot/Git/user/.gnupg/gpg.conf
 cp ~/.gnupg/dirmngr.conf ~/www/wwwroot/Git/user/.gnupg/dirmngr.conf
-cp ~/.gnupg/sshcontrol ~/www/wwwroot/Git/user/.gnupg/sshcontrol
 
 cp ~/.gitconfig ~/www/wwwroot/Git/user/.gitconfig
 

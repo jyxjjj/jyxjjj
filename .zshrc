@@ -19,7 +19,6 @@ source ~/zshrc.d/30.alias.sh
 source ~/zshrc.d/31.functions.sh
 
 source ~/zshrc.d/50.gpg.sh
-source ~/zshrc.d/51.ssh.sh
 
 source ~/zshrc.d/60.php.sh
 
