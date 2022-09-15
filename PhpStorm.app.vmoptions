@@ -14,7 +14,6 @@
 -Dkotlinx.coroutines.debug=off
 -XX:ErrorFile=$USER_HOME/java_error_in_phpstorm_%p.log
 -XX:HeapDumpPath=$USER_HOME/java_error_in_phpstorm.hprof
--Dide.no.platform.update=true
 -Didea.config.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config
 -Didea.system.path=/Users/jyxjjj/www/JetBrains/PhpStorm/system
 -Didea.plugins.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config/plugins

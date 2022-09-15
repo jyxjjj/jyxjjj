@@ -4,10 +4,10 @@ function cd() {
     builtin cd $1
     ls -alh
     case $PWD in
-        (*/KJ/mp*)
-            if (( SETEDPHPFORMP == 0 )) {
+        (*/KJ/*)
+            if (( SETEDPHPFORKJ == 0 )) {
                 setphp 7.3
-                export SETEDPHPFORMP=1
+                export SETEDPHPFORKJ=1
             }
             ;;
     esac

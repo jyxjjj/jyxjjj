@@ -6,7 +6,12 @@ setopt appendhistory
 setopt sharehistory
 setopt promptsubst
 
-PROMPT=$'\n%F{cyan}================================%f\n[%D{%Y-%m-%d %H:%M:%S}] [%F{yellow}%?%f]\n[%F{cyan}%n@%m%f]\n[%F{green}%~%f]'
+PROMPT=$'
+%{%F{cyan}%}================================%{%f%}
+[%*] [%{%F{yellow}%}%?%{%f%}]
+[%{%F{cyan}%}%n@%m%{%f%}]
+[%{%F{green}%}%~%{%f%}]'
+
 
 source ~/zshrc.d/01.proxy.sh
 
