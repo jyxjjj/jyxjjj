@@ -8,8 +8,6 @@ Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
 
 Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Technology Evolvement Co.,Ltd.)
 
-Company: ShenZhen DeRui Network Tech.,Co.,Ltd.
-
 You can find more infomation from my [Curriculum Vitae(downgrade into demo mode)](https://github.desmg.com/Curriculum-Vitae-By-Google-Material-Design/).
 
 See [Github Gist](https://gist.github.com/jyxjjj)
