@@ -24,6 +24,7 @@ I use:
 - [Go](https://golang.org/), [Python](https://www.python.org/)
 - [NodeJS](https://nodejs.org/en/), [Angular](https://angular.io/), SASS
 - [Aliyun](https://www.alibabacloud.com/en), ECS, VPC, EIP, VPN, CDN, NAS, OSS
+- [Digital Ocean](https://www.digitalocean.com/?refcode=23e8653b361a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge), Droplets
 - MacOS, [Linux](https://getfedora.org/), Windows, [Nginx](https://nginx.org/), [MariaDb](https://mariadb.org/), [Redis](https://redis.io/)
 - [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
 
