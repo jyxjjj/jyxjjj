@@ -9,7 +9,7 @@
 	bare = false
 	repositoryformatversion = 0
 	logallrefupdates = true
-	ignorecase = true
+	ignorecase = false
 	precomposeunicode = true
 [tag]
 	forceSignAnnotated = true
