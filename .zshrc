@@ -30,3 +30,6 @@ source ~/zshrc.d/60.php.sh
 source ~/zshrc.d/99.chpwd.sh
 
 export PROMPT
+
+# Load Angular CLI autocompletion.
+command -v ng && source <(ng completion script)
