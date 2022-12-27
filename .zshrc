@@ -32,4 +32,4 @@ source ~/zshrc.d/99.chpwd.sh
 export PROMPT
 
 # Load Angular CLI autocompletion.
-command -v ng && source <(ng completion script)
+command -v ng > /dev/null && source <(ng completion script)
