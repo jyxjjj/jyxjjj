@@ -14,5 +14,8 @@ cp ~/.gitconfig ~/www/wwwroot/Git/user/.gitconfig
 cp ~/.npmrc ~/www/wwwroot/Git/user/.npmrc
 
 cp ~/www/JetBrains/PhpStorm.app.vmoptions ~/www/wwwroot/Git/user/PhpStorm.app.vmoptions
+cp ~/www/JetBrains/PyCharm.app.vmoptions ~/www/wwwroot/Git/user/PyCharm.app.vmoptions
+cp ~/www/JetBrains/GoLand.app.vmoptions ~/www/wwwroot/Git/user/GoLand.app.vmoptions
+cp ~/www/JetBrains/AppCode.app.vmoptions ~/www/wwwroot/Git/user/AppCode.app.vmoptions
 
 code .
