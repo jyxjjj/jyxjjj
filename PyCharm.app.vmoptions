@@ -12,8 +12,8 @@
 -Djdk.attach.allowAttachSelf=true
 -Djdk.module.illegalAccess.silent=true
 -Dkotlinx.coroutines.debug=off
--XX:ErrorFile=$USER_HOME/java_error_in_pycharm_%p.log
--XX:HeapDumpPath=$USER_HOME/java_error_in_pycharm.hprof
+-XX:ErrorFile=$USER_HOME/java_error_in_PyCharm_%p.log
+-XX:HeapDumpPath=$USER_HOME/java_error_in_PyCharm.hprof
 -Didea.config.path=/Users/jyxjjj/www/JetBrains/PyCharm/config
 -Didea.system.path=/Users/jyxjjj/www/JetBrains/PyCharm/system
 -Didea.plugins.path=/Users/jyxjjj/www/JetBrains/PyCharm/config/plugins

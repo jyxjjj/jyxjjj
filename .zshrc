@@ -25,7 +25,9 @@ source ~/zshrc.d/31.functions.sh
 
 source ~/zshrc.d/50.gpg.sh
 
+source ~/zshrc.d/59.android.sh
 source ~/zshrc.d/60.php.sh
+source ~/zshrc.d/61.artisan.sh
 
 source ~/zshrc.d/99.chpwd.sh
 

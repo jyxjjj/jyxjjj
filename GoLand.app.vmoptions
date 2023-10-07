@@ -12,8 +12,8 @@
 -Djdk.attach.allowAttachSelf=true
 -Djdk.module.illegalAccess.silent=true
 -Dkotlinx.coroutines.debug=off
--XX:ErrorFile=$USER_HOME/java_error_in_goland_%p.log
--XX:HeapDumpPath=$USER_HOME/java_error_in_goland.hprof
+-XX:ErrorFile=$USER_HOME/java_error_in_GoLand_%p.log
+-XX:HeapDumpPath=$USER_HOME/java_error_in_GoLand.hprof
 -Didea.config.path=/Users/jyxjjj/www/JetBrains/GoLand/config
 -Didea.system.path=/Users/jyxjjj/www/JetBrains/GoLand/system
 -Didea.plugins.path=/Users/jyxjjj/www/JetBrains/GoLand/config/plugins

@@ -12,8 +12,8 @@
 -Djdk.attach.allowAttachSelf=true
 -Djdk.module.illegalAccess.silent=true
 -Dkotlinx.coroutines.debug=off
--XX:ErrorFile=$USER_HOME/java_error_in_phpstorm_%p.log
--XX:HeapDumpPath=$USER_HOME/java_error_in_phpstorm.hprof
+-XX:ErrorFile=$USER_HOME/java_error_in_PhpStorm_%p.log
+-XX:HeapDumpPath=$USER_HOME/java_error_in_PhpStorm.hprof
 -Didea.config.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config
 -Didea.system.path=/Users/jyxjjj/www/JetBrains/PhpStorm/system
 -Didea.plugins.path=/Users/jyxjjj/www/JetBrains/PhpStorm/config/plugins

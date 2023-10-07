@@ -32,15 +32,16 @@ function tbw() {
 }
 
 function listip() {
-    echo "Internet4:                                  $(curl -s https://api.ipify.org)"
-    echo "Internet6:                                  $(curl -s https://api6.ipify.org)"
-    echo "en0(Wi-Fi)            (f4:d4:88:6e:06:b1):  $(ipconfig getifaddr en0)"
-    echo "en1(Thunderbolt 1)    (36:85:02:21:fc:00):  $(ipconfig getifaddr en1)"
-    echo "en2(Thunderbolt 2)    (36:85:02:21:fc:04):  $(ipconfig getifaddr en2)"
-    echo "en3(Thunderbolt 3)    (36:85:02:21:fc:08):  $(ipconfig getifaddr en3)"
-    echo "en4(Ethernet Adaptor) (ae:9c:e1:cb:6e:79):  $(ipconfig getifaddr en4)"
-    echo "en5(Ethernet Adaptor) (ae:9c:e1:cb:6e:7a):  $(ipconfig getifaddr en5)"
-    echo "en6(Ethernet Adapter) (ae:9c:e1:cb:6e:7b):  $(ipconfig getifaddr en6)"
+    echo "Inet4:                                      $(curl -s https://api.ipify.org)"
+    echo "Inet6:                                      $(curl -s https://api6.ipify.org)"
+    echo "Internet:                                   $(curl -s https://www.desmg.com/api/IP)"
+    echo "en0(Wi-Fi)            ($(ifconfig en0 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en0)"
+    echo "en1(Thunderbolt 1)    ($(ifconfig en1 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en1)"
+    echo "en2(Thunderbolt 2)    ($(ifconfig en2 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en2)"
+    echo "en3(Thunderbolt 3)    ($(ifconfig en3 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en3)"
+    echo "en4(Ethernet Adaptor) ($(ifconfig en4 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en4)"
+    echo "en5(Ethernet Adaptor) ($(ifconfig en5 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en5)"
+    echo "en6(Ethernet Adapter) ($(ifconfig en6 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en6)"
 }
 
 function rmDSStore () {
