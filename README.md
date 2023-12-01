@@ -56,4 +56,4 @@ Copyright &copy; 2020 [DESMG](https://www.desmg.com) All Rights Reserved.
 
 ## LICENSE
 
-<img src="resources/images/GPL-3.0-only.svg" alt="GNU GPL VERSION 3(GPL-3.0-only)" align="center" width="50%">
+[GPL-3.0-Only](LICENSE)
