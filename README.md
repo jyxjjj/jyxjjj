@@ -48,7 +48,7 @@ Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
 ## Donate
 
-Alipay <img src="resources/images/alipay.png" alt="Alipay QRCode" height="128" width="128" align="center">
+<a href="https://www.desmg.com/donate">Click Here</a>
 
 ## Copyright
 
