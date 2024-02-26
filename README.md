@@ -1,6 +1,6 @@
 # Self Used User Configuration Files
 
-this repo branch can be aliased as `DOT Files` repo.
+this is a branch but actually a repository can be aliased as `DOT Files`.
 
 ## LICENSE
 
