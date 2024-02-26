@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/sbin:/opt/homebrew/opt/php@8.3/bin:$PATH"
 
 function setphp(){
     local oldpaths=$PATH

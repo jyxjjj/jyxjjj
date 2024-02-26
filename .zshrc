@@ -6,6 +6,8 @@ setopt appendhistory
 setopt sharehistory
 setopt promptsubst
 
+export LESSHISTFILE=/dev/null
+
 PROMPT=$'
 %{%F{cyan}%}================================%{%f%}
 [%*] [%{%F{yellow}%}%?%{%f%}]

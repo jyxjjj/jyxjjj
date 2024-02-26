@@ -14,6 +14,11 @@ function cd() {
                 export SETEDPHPFORKJ=1
             }
             ;;
+        (*/KJ/monitor*)
+            if (( SETEDPHPFORKJ == 0 )) {
+                export SETEDPHPFORKJ=1
+            }
+            ;;
         (*/KJ/*)
             if (( SETEDPHPFORKJ == 0 )) {
                 setphp 7.3
