@@ -16,4 +16,6 @@ cp -i ~/.npmrc ~/www/wwwroot/Git/user/.npmrc
 
 cp -i ~/www/JetBrains/*.app.vmoptions ~/www/wwwroot/Git/user/JetBrains
 
-code .
+if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
+    code ~/www/wwwroot/Git/user/
+fi
