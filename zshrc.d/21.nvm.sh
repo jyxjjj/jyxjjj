@@ -20,6 +20,7 @@ function nvmupdate() {
     echo "Update available: $old -> $new"
     echo "Do you want to proceed? (Y/n)\c"
     read -q -k 1 response
+    echo -n "\n"
     if [[ $response == "N" || $response == "n" ]]; then
         echo "Aborting."
         return
