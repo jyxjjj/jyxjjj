@@ -14,7 +14,7 @@
 -Dkotlinx.coroutines.debug=off
 -XX:ErrorFile=$USER_HOME/java_error_in_PyCharm_%p.log
 -XX:HeapDumpPath=$USER_HOME/java_error_in_PyCharm.hprof
--Didea.config.path=$USER_HOME/www/JetBrains/PyCharm/config
--Didea.system.path=$USER_HOME/www/JetBrains/PyCharm/system
--Didea.plugins.path=$USER_HOME/www/JetBrains/PyCharm/config/plugins
--Didea.log.path=$USER_HOME/www/JetBrains/PyCharm/system/log
+-Didea.config.path=~/www/JetBrains/PyCharm/config
+-Didea.system.path=~/www/JetBrains/PyCharm/system
+-Didea.plugins.path=~/www/JetBrains/PyCharm/config/plugins
+-Didea.log.path=~/www/JetBrains/PyCharm/system/log
