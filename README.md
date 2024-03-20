@@ -52,7 +52,7 @@ Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
 ## Copyright
 
-Copyright &copy; 2020 [DESMG](https://www.desmg.com) All Rights Reserved. 
+Copyright &copy; 2024 [DESMG](https://www.desmg.com) All Rights Reserved. 
 
 ## LICENSE
 
