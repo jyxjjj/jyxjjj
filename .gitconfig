@@ -1,0 +1,39 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[core]
+    eol = lf
+    autocrlf = input
+    safecrlf = true
+    filemode = false
+    bare = false
+    repositoryformatversion = 0
+    logallrefupdates = true
+    ignorecase = false
+    precomposeunicode = true
+[tag]
+    forceSignAnnotated = true
+[color]
+    ui = auto
+[init]
+    defaultBranch = main
+[user]
+    name = jyxjjj
+    email = 773933146@qq.com
+    signingKey = A86F2BF9569C54D0
+[commit]
+    gpgSign = true
+[gpg]
+    program = /usr/local/bin/gpg
+[pull]
+    rebase = true
+[alias]
+    a = "!git add ."
+    c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+    d = "!git diff"
+    f = "!git fetch"
+    p = "!git push"
+    s = "!git status"
+    acp = "!git add . && git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
