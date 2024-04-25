@@ -13,8 +13,6 @@
     logallrefupdates = true
     ignorecase = false
     precomposeunicode = true
-[tag]
-    forceSignAnnotated = true
 [color]
     ui = auto
 [init]
@@ -23,17 +21,23 @@
     name = jyxjjj
     email = 773933146@qq.com
     signingKey = A86F2BF9569C54D0
-[commit]
-    gpgSign = true
 [gpg]
     program = /usr/local/bin/gpg
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
+    forceSignAnnotated = true
 [pull]
     rebase = true
 [alias]
-    a = "!git add ."
-    c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+    s = "!git status"
     d = "!git diff"
     f = "!git fetch"
+    a = "!git add ."
+    c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+    t = "!git tag -s"
     p = "!git push"
-    s = "!git status"
     acp = "!git add . && git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
+    lines = "!git log --author='jyxjjj' --numstat --pretty='%H' | grep -vE '[a-z0-9]{40}' | awk '{add+=$1; del+=$2} END {print \"User: jyxjjj Added: \" add \" Removed: \" del}'"
+    maintain = "!git reflog expire --expire=now --all && git gc --prune=now && git fsck --full --unreachable && git gc --prune=now"

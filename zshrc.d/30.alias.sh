@@ -4,13 +4,15 @@ alias lh='ls -alh'
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+
+alias grep='grep --color=auto'
+
 alias free='vm_stat'
-alias ssh='ssh -2 -4'
+
 alias sha1='openssl dgst -hex -sha1'
 alias sha256='openssl dgst -hex -sha256'
 alias sha512='openssl dgst -hex -sha512'
+
 alias ffmpeg='ffmpeg -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
-alias JBcrackR='java -jar ~/Downloads/JetBrainsUnlimitedTrial-1.4.jar r'
-alias JBcrackU='java -jar ~/Downloads/JetBrainsUnlimitedTrial-1.4.jar u'

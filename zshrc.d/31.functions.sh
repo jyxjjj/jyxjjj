@@ -5,6 +5,7 @@ function writedefaults() {
     defaults write com.apple.finder ShowPathbar -bool TRUE
     defaults write com.apple.finder ShowStatusBar -bool TRUE
     defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE
+    defaults write com.apple.Dock autohide-delay -float 0
 }
 
 function title() {
@@ -27,7 +28,7 @@ function path() {
 }
 
 function tbw() {
-    local str=$((smartctl -A disk0)|(grep 'Data Units Written'))
+    local str=$(smartctl -A disk0|grep 'Data Units Written')
     echo $str
 }
 
@@ -63,4 +64,27 @@ function flushdns () {
     sudo killall -INFO mDNSResponder
     sudo killall mDNSResponderHelper
     sudo dscacheutil -flushcache
+}
+
+function deletexattr () {
+    xattr -d com.apple.quarantine $1
+    xattr -d com.apple.macl $1
+    xattr -d com.apple.provenance $1
+}
+
+function filesize () {
+    local size=$(curl -sIL --max-redirs 3 "$1" | grep -i 'Content-Length' | tail -n 1 | awk '{gsub("\r", ""); print $2}')
+    if [[ -z "$size" || ! "$size" =~ ^[0-9]+$ ]]; then
+        echo "Content-Length not found or invalid"
+    else
+        if (( size < 1024 )); then
+            echo "${size}B"
+        elif (( size < 1024 * 1024 )); then
+            echo "$(awk -v size="$size" 'BEGIN {print size/1024"KB"}')"
+        elif (( size < 1024 * 1024 * 1024 )); then
+            echo "$(awk -v size="$size" 'BEGIN {print size/1024/1024"MB"}')"
+        else
+            echo "$(awk -v size="$size" 'BEGIN {print size/1024/1024/1024"GB"}')"
+        fi
+    fi
 }

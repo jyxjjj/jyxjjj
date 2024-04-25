@@ -19,7 +19,7 @@ function nvmupdate() {
     echo "New: $new"
     echo "Update available: $old -> $new"
     echo "Do you want to proceed? (Y/n)\c"
-    read -q -k 1 response
+    read -k 1 response
     echo -n "\n"
     if [[ $response == "N" || $response == "n" ]]; then
         echo "Aborting."
@@ -39,7 +39,7 @@ function nvmupdate() {
 && nvm use $new \
 && nvm alias default $new \
 && npm i -g -U npm \
-&& npm ls -g\
+&& npm ls -g \
 && node -v \
 && npm -v"
 }
