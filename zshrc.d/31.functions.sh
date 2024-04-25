@@ -64,3 +64,9 @@ function flushdns () {
     sudo killall mDNSResponderHelper
     sudo dscacheutil -flushcache
 }
+
+function deletexattr () {
+    xattr -d com.apple.quarantine $1
+    xattr -d com.apple.macl $1
+    xattr -d com.apple.provenance $1
+}

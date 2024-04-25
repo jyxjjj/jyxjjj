@@ -13,8 +13,6 @@
     logallrefupdates = true
     ignorecase = false
     precomposeunicode = true
-[tag]
-    forceSignAnnotated = true
 [color]
     ui = auto
 [init]
@@ -23,13 +21,17 @@
     name = jyxjjj
     email = 773933146@qq.com
     signingKey = A86F2BF9569C54D0
-[commit]
-    gpgSign = true
 [gpg]
     program = /usr/local/bin/gpg
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
+    forceSignAnnotated = true
 [pull]
     rebase = true
 [alias]
+    tag = tag -s
     a = "!git add ."
     c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
     d = "!git diff"
