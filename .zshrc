@@ -1,5 +1,8 @@
 autoload -U colors && colors
 
+autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
+
 setopt histignoredups
 setopt histignorealldups
 setopt appendhistory
@@ -16,6 +19,7 @@ PROMPT=$'
 
 
 source ~/zshrc.d/01.proxy.sh
+source ~/zshrc.d/02.ssh.sh
 
 source ~/zshrc.d/10.git.sh
 
