@@ -39,7 +39,7 @@ function nvmupdate() {
 && nvm use $new \
 && nvm alias default $new \
 && npm i -g -U npm \
-&& npm ls -g\
+&& npm ls -g \
 && node -v \
 && npm -v"
 }
