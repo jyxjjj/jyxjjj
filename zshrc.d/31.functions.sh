@@ -27,7 +27,7 @@ function path() {
 }
 
 function tbw() {
-    local str=$((smartctl -A disk0)|(grep 'Data Units Written'))
+    local str=$(smartctl -A disk0|grep 'Data Units Written')
     echo $str
 }
 

@@ -29,8 +29,9 @@ source ~/zshrc.d/21.nvm.sh
 source ~/zshrc.d/30.alias.sh
 source ~/zshrc.d/31.functions.sh
 
-source ~/zshrc.d/50.gpg.sh
+source ~/zshrc.d/40.chrome.sh
 
+source ~/zshrc.d/50.gpg.sh
 source ~/zshrc.d/59.android.sh
 source ~/zshrc.d/60.php.sh
 source ~/zshrc.d/61.artisan.sh
