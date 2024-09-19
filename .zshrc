@@ -13,7 +13,7 @@ export LESSHISTFILE=/dev/null
 
 PROMPT=$'
 %{%F{cyan}%}================================%{%f%}
-[%*] [%{%F{yellow}%}%?%{%f%}]
+[%D{%H:%M:%S}] [%{%F{yellow}%}%?%{%f%}]
 [%{%F{cyan}%}%n@%m%{%f%}]
 [%{%F{green}%}%~%{%f%}]'
 
