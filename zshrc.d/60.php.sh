@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/php@8.3/sbin:/opt/homebrew/opt/php@8.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.4/sbin:/opt/homebrew/opt/php@8.4/bin:$PATH"
 
 function setphp(){
     local oldpaths=$PATH
@@ -32,4 +32,12 @@ function setphp(){
         local restorednewversion=$restoredversionstr[5,7]
         echo PHP version is: $restorednewversion
     }
+}
+
+function installphpext(){
+    brew install shivammathur/extensions/event@$1 shivammathur/extensions/igbinary@$1 shivammathur/extensions/msgpack@$1 shivammathur/extensions/redis@$1
+}
+
+function uninstallphpext(){
+    brew uninstall shivammathur/extensions/event@$1 shivammathur/extensions/igbinary@$1 shivammathur/extensions/msgpack@$1 shivammathur/extensions/redis@$1
 }
