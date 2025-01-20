@@ -26,6 +26,17 @@ function setphp() {
     fi
 }
 
+function getphp() {
+    if [ -f composer.json ]; then
+        local phpversion=$(jq -r '.require["php"]' composer.json | grep -oE '[0-9]\.[0-9]')
+        if [ -n "$phpversion" ]; then
+            echo "PHP version in composer.json: $phpversion"
+            setphp $phpversion
+            return
+        fi
+    fi
+}
+
 alias listphp='brew list -1 --full|grep shivammathur'
 
 function installphpext() {
