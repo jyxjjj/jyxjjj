@@ -17,6 +17,7 @@ cp  ~/.npmrc ~/www/UserConfigs/.npmrc
 
 cp  ~/www/JetBrains/*.app.vmoptions ~/www/UserConfigs/JetBrains
 
+plutil -convert xml1 ~/Library/Preferences/com.apple.Terminal.plist -o ~/Library/Preferences/com.apple.Terminal.plist
 cp ~/Library/Preferences/com.apple.Terminal.plist ~/www/UserConfigs/com.apple.Terminal.plist
 
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
