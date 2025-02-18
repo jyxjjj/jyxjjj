@@ -6,10 +6,10 @@ function nvmupdate() {
     local old=$1
     local new=$2
     if [ -z "$old" ]; then
-        old=$(nvm current | sed 's/v//')
+        old=$(nvm current | sed 's/v//' | tr -d '\n')
     fi
     if [ -z "$new" ]; then
-        new=$(nvm ls-remote | tail -n 1 | sed 's/ //g' | sed 's/v//' | sed 's/->//' | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g")
+        new=$(nvm ls-remote | grep LTS | tail -n 1 | awk '{print $1}' | sed 's/v//' | tr -d '\n')
     fi
     if [[ "$old" == "$new" ]]; then
         echo "No new version available."

@@ -54,11 +54,11 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>304 80 1180 799 0 0 2560 1415 </string>
+	<string>681 342 1180 799 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG-Apple</key>
 	<string>1167 173 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG-Fedora</key>
-	<string>817 113 1180 799 0 0 2560 1415 </string>
+	<string>1028 130 1180 827 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 195 585 371 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
@@ -78,7 +78,7 @@
 		<integer>7</integer>
 	</array>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>TTInspector Selected Pane</key>
 	<string>Info</string>
 	<key>Window Settings</key>
@@ -413,6 +413,8 @@
 			<true/>
 			<key>ScrollbackLines</key>
 			<integer>8192</integer>
+			<key>SetLanguageEnvironmentVariables</key>
+			<false/>
 			<key>ShouldLimitScrollback</key>
 			<integer>1</integer>
 			<key>ShouldRestoreContent</key>
