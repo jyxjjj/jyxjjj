@@ -54,11 +54,11 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>681 342 1180 799 0 0 2560 1415 </string>
+	<string>1232 257 1180 799 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG-Apple</key>
 	<string>1167 173 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG-Fedora</key>
-	<string>1028 130 1180 827 0 0 2560 1415 </string>
+	<string>202 169 1180 799 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 195 585 371 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>

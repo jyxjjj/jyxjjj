@@ -1,7 +1,4 @@
 function cd() {
-    builtin cd $1
+    builtin cd $@
     ls -alh
-    getphp
 }
-
-getphp
