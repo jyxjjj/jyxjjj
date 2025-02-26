@@ -48,7 +48,7 @@ Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
 ## Donate
 
-<a href="https://www.desmg.com/donate">Click Here</a>
+<a href="https://www.desmg.com/#/donate">Click Here</a>
 
 ## Copyright
 
