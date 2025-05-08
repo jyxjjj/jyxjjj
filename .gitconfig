@@ -1,0 +1,49 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[core]
+    eol = lf
+    autocrlf = input
+    safecrlf = true
+    filemode = false
+    bare = false
+    repositoryformatversion = 0
+    logallrefupdates = true
+    ignorecase = false
+    precomposeunicode = true
+[color]
+    ui = auto
+[init]
+    defaultBranch = main
+[user]
+    name = jyxjjj
+    email = 773933146@qq.com
+    signingKey = A86F2BF9569C54D0
+[gpg]
+    program = /usr/local/bin/gpg
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
+    forceSignAnnotated = true
+[pull]
+    rebase = true
+[alias]
+    s = "!git status"
+    f = "!git fetch"
+    a = "!git add ."
+    c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+    p = "!git push"
+    ac = "!git a && git c"
+    cp = "!git c && git p"
+    acp = "!git a && git c && git p"
+    t = "!git tag -s"
+    d = "!git diff"
+    maintain = "!git reflog expire --expire=now --all && git gc --prune=now && git fsck --full --unreachable && git gc --prune=now"
+    e = "!code .git/config"
+    clearconfig = "!> .git/config"
+    clearhooks = "!rm -f .git/hooks/*"
+    new = "!git init && git clearconfig && git clearhooks && git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && git config branch.main.remote origin && git config branch.main.merge refs/heads/main"
+    url = "!git config remote.origin.url"
