@@ -10,3 +10,11 @@ function listip() {
     echo "en5(Ethernet Adaptor) ($(ifconfig en5 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en5)"
     echo "en6(Ethernet Adapter) ($(ifconfig en6 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en6)"
 }
+
+if [[ ! -d "/Volumes/TMP" ]]; then
+    LOCKDIR="$TMPDIR/TMPVolumeCreator.lock"
+    if mkdir "$LOCKDIR" 2>/dev/null; then
+        diskutil erasevolume 'Case-sensitive APFS' 'TMP' "$(hdiutil attach -nomount ram://2097152)" >/dev/null 2>&1
+        rm -rf "$LOCKDIR"
+    fi
+fi

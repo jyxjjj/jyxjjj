@@ -43,3 +43,6 @@ function nvmupdate() {
 && node -v \
 && npm -v"
 }
+
+# Load Angular CLI autocompletion.
+command -v ng >/dev/null && source <(ng completion script)

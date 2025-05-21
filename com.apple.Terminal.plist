@@ -40,7 +40,7 @@
 		<string>~^$t</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>1994 173 255 451 0 0 2560 1415 </string>
+	<string>1150 215 255 291 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>942 455 689 184 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
@@ -48,13 +48,13 @@
 	<key>NSWindow Frame New Command Panel</key>
 	<string>471 667 499 128 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>1742 656 668 568 0 0 2560 1415 </string>
+	<string>1530 386 668 568 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>420 359 1180 799 0 0 2560 1415 </string>
+	<string>710 573 1180 799 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>1345 172 1165 799 0 0 2560 1415 </string>
+	<string>1073 260 1138 748 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
@@ -253,7 +253,7 @@
 			<key>BackgroundAlphaInactive</key>
 			<real>0.5</real>
 			<key>BackgroundBlur</key>
-			<real>0.095725948033707889</real>
+			<real>0.10031601123595507</real>
 			<key>BackgroundBlurInactive</key>
 			<real>0.15134743679775287</real>
 			<key>BackgroundColor</key>
@@ -261,14 +261,14 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
-			Y2VWJGNsYXNzTxAsMC4xMjk0MTE3NjQ3IDAuMTI5NDExNzY0NyAw
-			LjEyOTQxMTc2NDcgMC44NQAQAYAC0hQVFhdaJGNsYXNzbmFtZVgk
-			Y2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0CBEaJCkyN0lMUVNX
-			XWRqd36tr7G2wcrS1QAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAA
-			AAAAAADe
+			Y2VWJGNsYXNzTxAzMC4xMjk0MTE3NjQ3IDAuMTI5NDExNzY0NyAw
+			LjEyOTQxMTc2NDcgMC43NDY0ODg3NjQAEAGAAtIUFRYXWiRjbGFz
+			c25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQp
+			MjdJTFFTV11kand+tLa4vcjR2dwAAAAAAAABAQAAAAAAAAAZAAAA
+			AAAAAAAAAAAAAAAA5Q==
 			</data>
 			<key>BackgroundSettingsForInactiveWindows</key>
-			<true/>
+			<false/>
 			<key>BellBounceCritical</key>
 			<false/>
 			<key>CharacterEncoding</key>

@@ -36,6 +36,3 @@ for f in ~/zshrc.d/*.sh; do
 done
 
 export PROMPT
-
-# Load Angular CLI autocompletion.
-command -v ng > /dev/null && source <(ng completion script)
