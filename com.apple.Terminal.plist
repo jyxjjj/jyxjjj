@@ -52,9 +52,9 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>739 544 1180 799 0 0 2560 1415 </string>
+	<string>507 209 1180 799 0 0 1728 1079 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>270 95 1138 748 0 0 2560 1415 </string>
+	<string>0 280 1165 799 0 0 1728 1079 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
