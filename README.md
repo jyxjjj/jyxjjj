@@ -30,7 +30,7 @@ I am not a developer, I am an entire IT department.
 ##### Clouds
 - [CloudFlare](https://www.cloudflare.com)
 - [Digital Ocean](https://www.digitalocean.com/?refcode=23e8653b361a&utm_campaign=GitHub_Profile&utm_medium=Referral_Program&utm_source=GitHub), Droplets
-- [Aliyun](https://www.aliyun.com/minisite/goods?userCode=smzmcy90), ECS, VPC, EIP, OSS, SWAS-Next
+- [Aliyun](https://www.desmg.com/jump.php?url=https%3A%2F%2Fwww.aliyun.com%2Fminisite%2Fgoods%3FuserCode%3Dsmzmcy90), ECS, VPC, EIP, OSS, SWAS-Next
 
 ##### OS
 - macOS
