@@ -17,6 +17,7 @@ See [Github Gist](https://gist.github.com/jyxjjj)
 I am ShenLin, the CEO of DESMG.
 
 I am not a developer, I am an entire IT department.
+
 I use:
 - [PHP](https://www.php.net), [Laravel](https://laravel.com/)
 - C#, C, [OpenSSL](https://www.openssl.org/), [CURL](https://github.com/curl/curl)
@@ -29,10 +30,15 @@ I use:
 - [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
 
 I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming([1](https://www.blizzard.com/))([2](https://store.steampowered.com)), and of course, girls.
+
 I like [Marvel](https://www.marvel.com) more than [Detective](https://www.dccomics.com).
-I like dogs, cats, hamsters(https://en.wikipedia.org/wiki/Hamster), but i am allergic to dog hair and cat hair.
+
+I like dogs, cats, [hamsters](https://en.wikipedia.org/wiki/Hamster), but i am allergic to dog hair and cat hair.
+
 I like [Jurisprudence](https://en.wikipedia.org/wiki/Jurisprudence), [Astrophysics](https://en.wikipedia.org/wiki/Astrophysics), and [Quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics).
+
 I like stay up late.
+
 I am lazy enough.
 
 ## Sites
