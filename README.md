@@ -8,38 +8,54 @@ Timezone: Etc/GMT-8 (Equals to Asia/Shanghai)
 
 Company: DESMG (LongYuan Special Industry Group, NanJing LongYuan Network Technology Evolvement Co.,Ltd.)
 
-You can find more infomation from my [Curriculum Vitae(downgrade into demo mode)](https://github.desmg.com/Curriculum-Vitae-By-Google-Material-Design/).
-
-See [Github Gist](https://gist.github.com/jyxjjj)
-
 ### Description
+
+Also see [Github Gist](https://gist.github.com/jyxjjj)
 
 I am ShenLin, the CEO of DESMG.
 
 I am not a developer, I am an entire IT department.
 
-I use:
+#### I use
+
+##### Languages
 - [PHP](https://www.php.net), [Laravel](https://laravel.com/)
-- C#, C, [OpenSSL](https://www.openssl.org/), [CURL](https://github.com/curl/curl)
-- Java, Spring, JNA
-- [Go](https://golang.org/), [Python](https://www.python.org/)
 - [NodeJS](https://nodejs.org/en/), [Angular](https://angular.io/), [React](https://react.dev/), SASS, CSS
-- [Aliyun](https://www.alibabacloud.com/en), ECS, VPC, EIP, VPN, CDN, NAS, OSS
-- [Digital Ocean](https://www.digitalocean.com/?refcode=23e8653b361a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge), Droplets
-- macOS, [Linux](https://getfedora.org/), Windows, [Nginx](https://nginx.org/), [MariaDb](https://mariadb.org/), [Redis](https://redis.io/)
-- [Git](https://git-scm.com/), [SVN](https://subversion.apache.org/)
+- [Go](https://golang.org/)
+- [Python](https://www.python.org/)
+- C#
+- C, [OpenSSL](https://www.openssl.org/), [CURL](https://github.com/curl/curl)
+- Java, Spring, JNA
 
-I like [Singing](https://kg.qq.com/index-pc.html), Video Gaming([1](https://www.blizzard.com/))([2](https://store.steampowered.com)), and of course, girls.
+##### Clouds
+- [CloudFlare](https://www.cloudflare.com)
+- [Digital Ocean](https://www.digitalocean.com/?refcode=23e8653b361a&utm_campaign=GitHub_Profile&utm_medium=Referral_Program&utm_source=GitHub), Droplets
+- [Aliyun](https://www.aliyun.com/minisite/goods?userCode=smzmcy90), ECS, VPC, EIP, OSS, SWAS-Next
 
-I like [Marvel](https://www.marvel.com) more than [Detective](https://www.dccomics.com).
+##### OS
+- macOS
+- Windows
+- [Linux](https://fedoraproject.org/)
 
-I like dogs, cats, [hamsters](https://en.wikipedia.org/wiki/Hamster), but i am allergic to dog hair and cat hair.
+##### Softwares
+- [Nginx](https://nginx.org/)
+- [MariaDb](https://mariadb.org/)
+- [Redis](https://redis.io/)
+- [Git](https://git-scm.com/)
+- [SVN](https://subversion.apache.org/)
 
-I like [Jurisprudence](https://en.wikipedia.org/wiki/Jurisprudence), [Astrophysics](https://en.wikipedia.org/wiki/Astrophysics), and [Quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics).
-
-I like stay up late.
-
-I am lazy enough.
+##### Hobbies
+- [Singing](https://kg.qq.com/index-pc.html)
+- Video Gaming([1](https://www.blizzard.com/))([2](https://store.steampowered.com))
+- [Marvel](https://www.marvel.com) more than [Detective](https://www.dc.com)
+- Dogs, cats, but i am allergic to dog hair and cat hair.
+- [hamsters](https://en.wikipedia.org/wiki/Hamster)
+- [Jurisprudence](https://en.wikipedia.org/wiki/Jurisprudence)
+- [Astrophysics](https://en.wikipedia.org/wiki/Astrophysics)
+- [Quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics)
+- Wake up late
+- Sleep late
+- I am lazy enough.
 
 ## Sites
 
@@ -59,7 +75,7 @@ Telegram: [@jyxjjj](https://t.me/jyxjjj)
 
 ## Copyright
 
-Copyright &copy; 2024 [DESMG](https://www.desmg.com) All Rights Reserved. 
+Copyright &copy; 2025 [DESMG](https://www.desmg.com) All Rights Reserved. 
 
 ## LICENSE
 
