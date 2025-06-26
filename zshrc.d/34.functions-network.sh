@@ -1,4 +1,5 @@
 function flushdns() {
+    sudo -v
     sudo killall -INFO mDNSResponder
     sudo killall -HUP mDNSResponder
     sudo killall -INFO mDNSResponder
@@ -21,8 +22,9 @@ function ZTstatus() {
 }
 
 function ZTrestart() {
+    sudo -v
     sudo launchctl unload /Library/LaunchDaemons/com.zerotier.one.plist
     sudo launchctl load /Library/LaunchDaemons/com.zerotier.one.plist
-    sleep 5
+    sleep 10
     ZTstatus
 }

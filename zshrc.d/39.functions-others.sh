@@ -1,14 +1,18 @@
-function gitlines() {
-    local author=$1
-    if [[ -z "$author" ]]; then
-        author='jyxjjj'
-    fi
-    local date=$(date '+%Y-%m-%d 00:00:00')
-    local hashregex='[a-z0-9]{40}|[a-z0-9]{64}'
-    local awkstr=''
-    echo Since $(git log --reverse --format="%cd" --date="format:%Y-%m-%d %H:%M:%S" | head -n 1)
-    awkstr='{ add+=$1; del+=$2; total+=$1; total-=$2; count+=$1; count+=$2; } END { print "Repo: Added: " add " Removed: " del " Total: " total " Count: " count }'
-    git log --author=$author --numstat --pretty='%H' | grep -vE $hashregex | awk $awkstr
-    awkstr='{ add+=$1; del+=$2; total+=$1; total-=$2; count+=$1; count+=$2; } END { print "Today: Added: " add " Removed: " del " Total: " total " Count: " count }'
-    git log --author=$author --numstat --pretty='%H' --since $date | grep -vE $hashregex | awk $awkstr
+function DeviceAge() {
+    local BIRTH_TS=1642576960
+    local NOW_TS=$(date +%s)
+    local BIRTH=$(date -j -f "%s" "$BIRTH_TS" "+%Y-%m-%d %H:%M:%S")
+
+    local DIFF=$((NOW_TS - BIRTH_TS))
+    local DIFF_DATE=$(date -u -r "$DIFF" "+%Y %m %d %H %M %S")
+
+    local D_YEAR=$(echo "$DIFF_DATE" | awk '{print $1 - 1970}')
+    local D_MON=$(echo "$DIFF_DATE" | awk '{print $2 - 1}')
+    local D_DAY=$(echo "$DIFF_DATE" | awk '{print $3 - 1}')
+    local D_H=$(echo "$DIFF_DATE" | awk '{print $4 - 0}')
+    local D_M=$(echo "$DIFF_DATE" | awk '{print $5 - 0}')
+    local D_S=$(echo "$DIFF_DATE" | awk '{print $6 - 0}')
+
+    echo "Activated Since: $BIRTH"
+    echo "Device Age: ${D_YEAR}y ${D_MON}m ${D_DAY}d ${D_H}h ${D_M}m ${D_S}s"
 }

@@ -10,7 +10,7 @@ setopt sharehistory
 setopt promptsubst
 
 export LESSHISTFILE=/dev/null
-export LANG=en_US.UTF-8
+export LANG="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
@@ -36,3 +36,6 @@ for f in ~/zshrc.d/*.sh; do
 done
 
 export PROMPT
+
+echo "Current TTY: $TTY"
+DeviceAge

@@ -48,15 +48,17 @@
 	<key>NSWindow Frame New Command Panel</key>
 	<string>471 667 499 128 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>1530 386 668 568 0 0 2560 1415 </string>
+	<string>1110 199 668 568 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>507 209 1180 799 0 0 1728 1079 </string>
+	<string>1075 360 1180 799 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>0 280 1165 799 0 0 1728 1079 </string>
+	<string>997 249 1180 827 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
+	<key>NSWindow Frame TTWindow SSH-DESMG</key>
+	<string>1261 174 1180 799 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
 	<key>SecureKeyboardEntry</key>
@@ -68,10 +70,9 @@
 	<key>StringEncodings</key>
 	<array>
 		<integer>4</integer>
-		<integer>2147486000</integer>
+		<integer>7</integer>
 		<integer>10</integer>
 		<integer>2348810496</integer>
-		<integer>7</integer>
 	</array>
 	<key>TTAppPreferences Selected Tab</key>
 	<integer>1</integer>

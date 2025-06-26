@@ -19,3 +19,22 @@ function writedefaults() {
     defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE &
     defaults write com.apple.Dock autohide-delay -float 0 &
 }
+
+function removeMAU() {
+    sudo -v
+    sudo rm -rf "/Library/Application Support/Microsoft/MAU2.0"
+    sudo rm -rf "/Library/LaunchAgents/com.microsoft.update.agent.plist"
+    sudo rm -rf "/Library/LaunchDaemons/com.microsoft.autoupdate.helper.plist"
+    sudo rm -rf "/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper"
+}
+
+function lslaunch() {
+    echo "\n📂 /Library/LaunchDaemons"
+    ls -al /Library/LaunchDaemons
+
+    echo "\n📂 /Library/LaunchAgents"
+    ls -al /Library/LaunchAgents
+
+    echo "\n📂 ~/Library/LaunchAgents"
+    ls -al ~/Library/LaunchAgents
+}
