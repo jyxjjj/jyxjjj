@@ -38,3 +38,15 @@ function lslaunch() {
     echo "\n📂 ~/Library/LaunchAgents"
     ls -al ~/Library/LaunchAgents
 }
+
+function clearIconCache() {
+    sudo -v
+    sudo rm -rf /Library/Caches/com.apple.iconservices.store
+    sudo find /private/var/folders -name 'com.apple.iconservices.store' -delete
+    sudo find /private/var/folders -name 'com.apple.iconservices' -delete
+    qlmanage -r
+    qlmanage -r cache
+    killall Dock
+    killall Finder
+    killall SystemUIServer
+}
