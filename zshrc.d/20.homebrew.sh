@@ -2,4 +2,6 @@
 #export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.aliyun.com/homebrew/homebrew-core.git'
 #export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.aliyun.com/homebrew/homebrew-bottles'
 export HOMEBREW_EDITOR='code'
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_DOWNLOAD_CONCURRENCY=8
 eval "$(/opt/homebrew/bin/brew shellenv)"
