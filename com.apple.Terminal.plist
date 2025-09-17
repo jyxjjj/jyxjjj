@@ -5,7 +5,7 @@
 	<key>Default Window Settings</key>
 	<string>DESMG</string>
 	<key>DefaultProfilesVersion</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>HasMigratedDefaults</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -26,8 +26,8 @@
 	<true/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 255.000000, 431.000000, NO, NO</string>
-		<string>0.000000, 432.000000, 255.000000, 43.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 255.000000, 440.000000, NO, NO</string>
+		<string>0.000000, 441.000000, 255.000000, 43.000000, NO, NO</string>
 	</array>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
@@ -40,7 +40,7 @@
 		<string>~^$t</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>1150 215 255 291 0 0 2560 1415 </string>
+	<string>1084 184 275 475 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>942 418 689 96 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
@@ -48,19 +48,19 @@
 	<key>NSWindow Frame New Command Panel</key>
 	<string>471 667 499 128 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>1110 199 668 568 0 0 2560 1415 </string>
+	<string>613 201 668 572 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>159 353 1180 799 0 0 2560 1415 </string>
+	<string>188 321 1180 799 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>895 140 1180 799 0 0 2560 1415 </string>
+	<string>820 151 1192 813 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow SSH-DESMG</key>
 	<string>1261 174 1180 799 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
-	<real>2.0699999999999998</real>
+	<real>2.0899999999999999</real>
 	<key>SecureKeyboardEntry</key>
 	<false/>
 	<key>Shell</key>
@@ -75,7 +75,7 @@
 		<integer>2348810496</integer>
 	</array>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>TTInspector Selected Pane</key>
 	<string>Info</string>
 	<key>Window Settings</key>
@@ -254,7 +254,7 @@
 			<key>BackgroundAlphaInactive</key>
 			<real>0.5</real>
 			<key>BackgroundBlur</key>
-			<real>0.10031601123595507</real>
+			<real>0.14999999999999999</real>
 			<key>BackgroundBlurInactive</key>
 			<real>0.15134743679775287</real>
 			<key>BackgroundColor</key>
@@ -262,11 +262,11 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
-			Y2VWJGNsYXNzTxAzMC4xMjk0MTE3NjQ3IDAuMTI5NDExNzY0NyAw
-			LjEyOTQxMTc2NDcgMC43NDY0ODg3NjQAEAGAAtIUFRYXWiRjbGFz
-			c25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQp
-			MjdJTFFTV11kand+tLa4vcjR2dwAAAAAAAABAQAAAAAAAAAZAAAA
-			AAAAAAAAAAAAAAAA5Q==
+			Y2VWJGNsYXNzTxArMC4xMjk0MTE3NjQ3IDAuMTI5NDExNzY0NyAw
+			LjEyOTQxMTc2NDcgMC43ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+			bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1dd
+			ZGp3fqyusLXAydHUAAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAA
+			AAAAAN0=
 			</data>
 			<key>BackgroundSettingsForInactiveWindows</key>
 			<false/>
@@ -292,7 +292,7 @@
 			AAAAANo=
 			</data>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0699999999999998</real>
+			<real>2.0899999999999999</real>
 			<key>ScrollAlternateScreen</key>
 			<true/>
 			<key>ScrollbackLines</key>
@@ -385,7 +385,7 @@
 			<key>FontAntialias</key>
 			<true/>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0699999999999998</real>
+			<real>2.0899999999999999</real>
 			<key>ScrollbackLines</key>
 			<integer>16384</integer>
 			<key>SelectionColor</key>
