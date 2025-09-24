@@ -28,3 +28,13 @@ function ZTrestart() {
     sleep 10
     ZTstatus
 }
+
+function ZTstop() {
+    sudo -v
+    sudo launchctl unload /Library/LaunchDaemons/com.zerotier.one.plist
+}
+
+function ZTstart() {
+    sudo -v
+    sudo launchctl load /Library/LaunchDaemons/com.zerotier.one.plist
+}

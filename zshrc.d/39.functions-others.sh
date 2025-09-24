@@ -16,3 +16,7 @@ function DeviceAge() {
     echo "Activated Since: $BIRTH"
     echo "Device Age: ${D_YEAR}y ${D_MON}m ${D_DAY}d ${D_H}h ${D_M}m ${D_S}s"
 }
+
+function fns() {
+    cat ~/zshrc.d/*.sh | grep 'func' | grep 'tion ' | grep -v fns | awk '{print $2}' | sed 's/()//' | sort
+}

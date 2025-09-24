@@ -12,10 +12,36 @@ function listip() {
     echo "en15(Ethernet Adapter) ($(ifconfig en15 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en15)"
 }
 
-if [[ ! -d "/Volumes/TMP" ]]; then
-    LOCKDIR="$TMPDIR/TMPVolumeCreator.lock"
-    if mkdir "$LOCKDIR" 2>/dev/null; then
-        diskutil erasevolume 'Case-sensitive APFS' 'TMP' "$(hdiutil attach -nomount ram://2097152)" >/dev/null 2>&1
-        rm -rf "$LOCKDIR"
+function mountTMP() {
+    if [[ ! -d "/Volumes/TMP" ]]; then
+        LOCKFILE="$TMPDIR/TMPVolumeCreator.lock"
+        if [[ -f "$LOCKFILE" ]]; then
+            return 1
+        fi
+        touch "$LOCKFILE"
+        RAMDISK=$(hdiutil attach -nomount ram://2097152 2>/dev/null | xargs)
+        echo "Creating RAM disk at $RAMDISK..."
+        if [[ ! -b "$RAMDISK" ]]; then
+            echo "Error: Failed to create RAM disk $RAMDISK."
+            diskutil eject "$RAMDISK" >/dev/null 2>&1 || true
+            rm -f "$LOCKFILE"
+            return 1
+        fi
+        diskutil erasevolume 'Case-sensitive APFS' 'TMP' "$RAMDISK" >/dev/null 2>&1 || { 
+            echo "Error: Failed to format RAM disk $RAMDISK."
+            diskutil eject "$RAMDISK" >/dev/null 2>&1 || true
+            rm -f "$LOCKFILE"
+            return 1
+        }
+        rm -rf "$LOCKFILE"
+        echo "RAM disk mounted at /Volumes/TMP."
     fi
-fi
+}
+
+function unmountTMP() {
+    if [[ -d "/Volumes/TMP" ]]; then
+        diskutil eject "/Volumes/TMP" >/dev/null 2>&1 || true
+    fi
+}
+
+mountTMP
