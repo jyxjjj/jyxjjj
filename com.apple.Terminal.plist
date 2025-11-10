@@ -42,9 +42,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1084 184 275 475 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>942 418 689 96 0 0 2560 1415 </string>
+	<string>942 232 689 482 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>880 740 800 448 0 0 2560 1415 </string>
+	<string>1318 214 800 448 0 0 2560 1409 </string>
 	<key>NSWindow Frame New Command Panel</key>
 	<string>471 667 499 128 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
@@ -52,9 +52,9 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>595 206 1192 813 0 0 2560 1409 </string>
+	<string>1014 168 1192 724 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>0 731 1283 678 0 0 2560 1409 {"tilingState":{"tilingPosition":1,"normalizedSize":1,"untiledFrame":"{{353, 451}, {1192, 847}}"}}</string>
+	<string>715 161 1563 1136 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow SSH-DESMG</key>

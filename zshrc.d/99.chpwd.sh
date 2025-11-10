@@ -1,4 +1,5 @@
+# do not use autoload -U add-zsh-hook to make compatible with bash
 function cd() {
-    builtin cd $@
+    builtin cd "$@" || return
     ls -alh
 }

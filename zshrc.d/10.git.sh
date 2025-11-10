@@ -9,8 +9,8 @@ PROMPT+=$'$(__git_ps1)$ '
 
 function githubdesktop() {
     if [ -z "$1" ]; then
-        echo "Usage: githubdesktop <path>"
-        return
+        echo "Usage: githubdesktop [args]"
+        return 1
     fi
     BIN="/Applications/GitHub Desktop.app/Contents/MacOS/GitHub Desktop"
     CLI="/Applications/GitHub Desktop.app/Contents/Resources/app/cli.js"
@@ -20,6 +20,8 @@ function githubdesktop() {
         echo "GitHub Desktop not found"
     fi
 }
+
+alias ghd="githubdesktop ."
 
 function gitlines() {
     local author=$1

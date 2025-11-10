@@ -30,7 +30,7 @@ function nvmupdate() {
     nvm uninstall $old
     nvm use $new
     nvm alias default $new
-    npm i -g -U npm
+    npm i -g npm
     npm ls -g
     node -v
     npm -v
@@ -38,7 +38,7 @@ function nvmupdate() {
 && nvm uninstall $old \
 && nvm use $new \
 && nvm alias default $new \
-&& npm i -g -U npm \
+&& npm i -g npm \
 && npm ls -g \
 && node -v \
 && npm -v"

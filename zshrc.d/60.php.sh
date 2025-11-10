@@ -40,9 +40,31 @@ function getphp() {
 alias listphp='brew list -1 --full|grep shivammathur'
 
 function installphpext() {
-    brew install shivammathur/extensions/event@$1 shivammathur/extensions/igbinary@$1 shivammathur/extensions/msgpack@$1 shivammathur/extensions/redis@$1
+    if [[ ! "$1" =~ ^[0-9]\\.[0-9]$ ]]; then
+        echo "Invalid PHP version format: $1."
+        return 1
+    fi
+    brew install \
+    shivammathur/extensions/event@$1 \
+    shivammathur/extensions/igbinary@$1 \
+    shivammathur/extensions/msgpack@$1 \
+    shivammathur/extensions/redis@$1 \
+    shivammathur/extensions/imap-uw \
+    shivammathur/extensions/imap@$1 \
+    shivammathur/extensions/mailparse@$1
 }
 
 function uninstallphpext() {
-    brew uninstall shivammathur/extensions/event@$1 shivammathur/extensions/igbinary@$1 shivammathur/extensions/msgpack@$1 shivammathur/extensions/redis@$1
+    if [[ ! "$1" =~ ^[0-9]\\.[0-9]$ ]]; then
+        echo "Invalid PHP version format: $1."
+        return 1
+    fi
+    brew uninstall \
+    shivammathur/extensions/event@$1 \
+    shivammathur/extensions/igbinary@$1 \
+    shivammathur/extensions/msgpack@$1 \
+    shivammathur/extensions/redis@$1 \
+    shivammathur/extensions/imap-uw \
+    shivammathur/extensions/imap@$1 \
+    shivammathur/extensions/mailparse@$1
 }
