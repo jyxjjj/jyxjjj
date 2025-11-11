@@ -1,30 +1,40 @@
 #!/bin/zsh -i -l
 
-unalias cp
+set -e
 
-cp ~/.zshrc ~/www/UserConfigs/.zshrc
-rsync --info=progress2 --delete ~/zshrc.d/ ~/www/UserConfigs/zshrc.d/
+unalias rsync
+alias rsync='rsync -cDhlrtUz'
 
-cp ~/.gnupg/gpg-agent.conf ~/www/UserConfigs/.gnupg/gpg-agent.conf
-cp ~/.gnupg/gpg.conf ~/www/UserConfigs/.gnupg/gpg.conf
-cp ~/.gnupg/dirmngr.conf ~/www/UserConfigs/.gnupg/dirmngr.conf
+BASE_DIR=$HOME/www/UserConfigs
 
-cp ~/.ssh/config ~/www/UserConfigs/.ssh/config
+defaults delete com.apple.terminal NSOSPLastRootDirectory 2>/dev/null || true
+plutil -convert xml1 $HOME/Library/Preferences/com.apple.Terminal.plist -o $HOME/Library/Preferences/com.apple.Terminal.plist
 
-cp ~/.gitconfig ~/www/UserConfigs/.gitconfig
+rsync $HOME/.zshrc $BASE_DIR/.zshrc
+rsync --delete $HOME/zshrc.d/ $BASE_DIR/zshrc.d/
 
-cp ~/www/nvm/default-packages ~/www/UserConfigs/nvm/default-packages
+rsync $HOME/.gnupg/gpg-agent.conf $BASE_DIR/.gnupg/gpg-agent.conf
+rsync $HOME/.gnupg/gpg.conf $BASE_DIR/.gnupg/gpg.conf
+rsync $HOME/.gnupg/dirmngr.conf $BASE_DIR/.gnupg/dirmngr.conf
 
-cp ~/.npmrc ~/www/UserConfigs/.npmrc
+rsync $HOME/.ssh/config $BASE_DIR/.ssh/config
 
-cp ~/www/JetBrains/*.app.vmoptions ~/www/UserConfigs/JetBrains
+rsync $HOME/.gitconfig $BASE_DIR/.gitconfig
 
-defaults delete com.apple.terminal NSOSPLastRootDirectory
-plutil -convert xml1 ~/Library/Preferences/com.apple.Terminal.plist -o ~/Library/Preferences/com.apple.Terminal.plist
-cp ~/Library/Preferences/com.apple.Terminal.plist ~/www/UserConfigs/com.apple.Terminal.plist
+rsync $HOME/www/nvm/default-packages $BASE_DIR/nvm/default-packages
+
+rsync $HOME/.npmrc $BASE_DIR/.npmrc
+
+rsync $HOME/www/JetBrains/*.app.vmoptions $BASE_DIR/JetBrains
+
+rsync $HOME/Library/Preferences/com.apple.Terminal.plist $BASE_DIR/HKCU/Library/Preferences/com.apple.Terminal.plist
+
+rsync $HOME/Library/LaunchAgents/ScreenShotsWatcher.plist $BASE_DIR/HKCU/Library/LaunchAgents/ScreenShotsWatcher.plist
+
+rsync /Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist $BASE_DIR/HKLM/Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist
 
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
-    code ~/www/UserConfigs/
+    code $BASE_DIR/
 fi
 
 git a

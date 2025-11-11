@@ -108,8 +108,8 @@ sudo curl -fSsL https://mirrors.aliyun.com/composer/composer.phar -o /usr/local/
 sudo chmod +x /usr/local/bin/composer
 
 # vscode
-curl -fSsLo ~/Downloads/VSCode.zip "https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64"
-unzip ~/Downloads/VSCode.zip -d /Applications/
+curl -fSsLo $HOME/Downloads/VSCode.zip "https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64"
+unzip $HOME/Downloads/VSCode.zip -d /Applications/
 set +e
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 set -e
@@ -146,11 +146,11 @@ else
     preferred="rsa"
 fi
 if [ "$preferred" = "rsa" ]; then
-    if [ ! -f ~/.ssh/id_rsa ]; then
+    if [ ! -f $HOME/.ssh/id_rsa ]; then
         ssh-keygen -t $preferred -b 4096 -C "$name@$HOSTNAME"
     fi
 else
-    if [ ! -f ~/.ssh/id_ed25519 ]; then
+    if [ ! -f $HOME/.ssh/id_ed25519 ]; then
         ssh-keygen -t $preferred -C "$name@$HOSTNAME"
     fi
 fi
@@ -158,49 +158,49 @@ fi
 ssh -T git@github.com 2>&1 | grep -q "successfully authenticated"
 if [ $? -ne 0 ]; then
     echo "Please add the following public key to your GitHub account."
-    cat ~/.ssh/id_$preferred.pub
-    pbcopy <~/.ssh/id_$preferred.pub
+    cat $HOME/.ssh/id_$preferred.pub
+    pbcopy <$HOME/.ssh/id_$preferred.pub
     echo "The public key has been copied to the clipboard."
     open https://github.com/settings/ssh/new
     read continue\?"Press [Enter] key to continue..."
 fi
 
 # nvm
-mkdir -p ~/www/
-cd ~/www/
+mkdir -p $HOME/www/
+cd $HOME/www/
 git clone git@github.com:nvm-sh/nvm.git
 cd nvm
 git fetch --tags
 git checkout $(git describe --abbrev=0 --tags)
 curl -fSsLo default-packages https://github.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/nvm/default-packages
-cd ~
+cd $HOME
 
 # zsh
-curl -fSsLo ~/Library/Preferences/com.apple.Terminal.plist "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/com.apple.Terminal.plist"
+curl -fSsLo $HOME/Library/Preferences/com.apple.Terminal.plist "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/HKCU/Library/Preferences/com.apple.Terminal.plist"
 
-mkdir -p ~/zshrc.d/
-rm -f ~/zshrc.d/*
-rm -f ~/.zprofile
-rm -f ~/.zshenv
-rm -f ~/.zlogin
-rm -f ~/.zlogout
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/.zshrc" -o ~/.zshrc
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/.git-prompt.sh" -o ~/zshrc.d/.git-prompt.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/01.proxy.sh" -o ~/zshrc.d/01.proxy.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/10.git.sh" -o ~/zshrc.d/10.git.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/20.homebrew.sh" -o ~/zshrc.d/20.homebrew.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/30.alias.sh" -o ~/zshrc.d/30.alias.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/31.functions-macos.sh" -o ~/zshrc.d/31.functions-macos.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/32.functions-terminal.sh" -o ~/zshrc.d/32.functions-terminal.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/33.functions-devices.sh" -o ~/zshrc.d/33.functions-devices.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/34.functions-network.sh" -o ~/zshrc.d/34.functions-network.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/40.chrome.sh" -o ~/zshrc.d/40.chrome.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/60.php.sh" -o ~/zshrc.d/60.php.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/61.artisan.sh" -o ~/zshrc.d/61.artisan.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/62.nvm.sh" -o ~/zshrc.d/62.nvm.sh
-curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/99.chpwd.sh" -o ~/zshrc.d/99.chpwd.sh
+mkdir -p $HOME/zshrc.d/
+rm -f $HOME/zshrc.d/*
+rm -f $HOME/.zprofile
+rm -f $HOME/.zshenv
+rm -f $HOME/.zlogin
+rm -f $HOME/.zlogout
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/.zshrc" -o $HOME/.zshrc
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/.git-prompt.sh" -o $HOME/zshrc.d/.git-prompt.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/01.proxy.sh" -o $HOME/zshrc.d/01.proxy.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/10.git.sh" -o $HOME/zshrc.d/10.git.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/20.homebrew.sh" -o $HOME/zshrc.d/20.homebrew.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/30.alias.sh" -o $HOME/zshrc.d/30.alias.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/31.functions-macos.sh" -o $HOME/zshrc.d/31.functions-macos.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/32.functions-terminal.sh" -o $HOME/zshrc.d/32.functions-terminal.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/33.functions-devices.sh" -o $HOME/zshrc.d/33.functions-devices.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/34.functions-network.sh" -o $HOME/zshrc.d/34.functions-network.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/40.chrome.sh" -o $HOME/zshrc.d/40.chrome.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/60.php.sh" -o $HOME/zshrc.d/60.php.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/61.artisan.sh" -o $HOME/zshrc.d/61.artisan.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/62.nvm.sh" -o $HOME/zshrc.d/62.nvm.sh
+curl -fSsL "https://raw.githubusercontent.com/jyxjjj/jyxjjj/raw/refs/heads/UserConfigs/zshrc.d/99.chpwd.sh" -o $HOME/zshrc.d/99.chpwd.sh
 
 set +e
-source ~/.zshrc
+source $HOME/.zshrc
 writedefaults
 nvmupdate
