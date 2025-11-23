@@ -37,7 +37,7 @@ function ZTrestart() {
     sudo -v
     sudo launchctl unload /Library/LaunchDaemons/com.zerotier.one.plist
     sudo launchctl load /Library/LaunchDaemons/com.zerotier.one.plist
-    sleep 10
+    sleep 3
     ZTstatus
 }
 
