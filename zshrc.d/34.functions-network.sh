@@ -9,16 +9,27 @@ function flushdns() {
     sudo dscacheutil -flushcache
 }
 
+function ZTrouteSet() {
+    ip route add 10.0.254.0/24 via 192.168.50.3 dev en0
+}
+
+function ZTrouteDel() {
+    ip route delete 10.0.254.0/24 via 192.168.50.3 dev en0 2>/dev/null || true
+}
+
 function ZTstatus() {
-    echo "================================================================"
-    zerotier-cli status
-    echo "================================================================"
-    zerotier-cli listnetworks
-    echo "================================================================"
-    zerotier-cli peers
-    echo "================================================================"
-    zerotier-cli listpeers
-    echo "================================================================"
+    function _zt_status() {
+        echo "================================================================"
+        zerotier-cli status
+        echo "================================================================"
+        zerotier-cli listnetworks
+        echo "================================================================"
+        zerotier-cli peers
+        echo "================================================================"
+        zerotier-cli listpeers
+        echo "================================================================"
+    }
+    watch -n 1 _zt_status
 }
 
 function ZTrestart() {
@@ -32,9 +43,13 @@ function ZTrestart() {
 function ZTstop() {
     sudo -v
     sudo launchctl unload /Library/LaunchDaemons/com.zerotier.one.plist
+    if [[ $(ifconfig en0 | grep inet | awk '{print $2}') == "192.168.50.6" ]]; then
+        ZTrouteSet
+    fi
 }
 
 function ZTstart() {
     sudo -v
+    ZTrouteDel
     sudo launchctl load /Library/LaunchDaemons/com.zerotier.one.plist
 }
