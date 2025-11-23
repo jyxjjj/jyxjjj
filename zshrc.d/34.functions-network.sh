@@ -11,11 +11,11 @@ function flushdns() {
 
 function ZTrouteSet() {
     ZTrouteDel
-    ip route add 10.0.254.0/24 via 192.168.50.3 dev en0
+    ip route add 10.0.254.0/24 via 192.168.50.3
 }
 
 function ZTrouteDel() {
-    ip route delete 10.0.254.0/24 via 192.168.50.3 dev en0 2>/dev/null || true
+    ip route delete 10.0.254.0/24 via 192.168.50.3 2>/dev/null || true
 }
 
 function ZTstatus() {
