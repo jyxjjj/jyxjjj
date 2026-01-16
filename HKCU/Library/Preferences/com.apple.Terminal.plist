@@ -52,9 +52,9 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>261 176 1192 724 0 0 1728 1083 </string>
+	<string>768 417 1192 724 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>487 118 1175 813 0 0 1728 1083 </string>
+	<string>673 179 1192 813 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow SSH-DESMG</key>

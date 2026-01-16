@@ -7,6 +7,8 @@ alias rm='rm -i'
 
 alias grep='grep --color=auto'
 
+alias tbw='smartctl -A disk0 | grep "Data Units Written"'
+
 alias free='vm_stat'
 
 alias ffmpeg='ffmpeg -hide_banner'
@@ -18,5 +20,3 @@ alias sha256='openssl dgst -hex -sha256'
 alias sha512='openssl dgst -hex -sha512'
 
 alias rsync='rsync -cDhlrtUz'
-
-alias tbw='smartctl -A disk0 | grep "Data Units Written"'

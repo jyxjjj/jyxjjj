@@ -20,13 +20,83 @@ function writedefaults() {
     defaults write com.apple.Dock autohide-delay -float 0 &
 }
 
-function removeMAU() {
-    sudo -v
-    sudo rm -rf "/Library/Application Support/Microsoft/MAU2.0"
-    sudo rm -rf "/Library/Preferences/com.microsoft.autoupdate2.plist"
-    sudo rm -rf "/Library/LaunchAgents/com.microsoft.update.agent.plist"
-    sudo rm -rf "/Library/LaunchDaemons/com.microsoft.autoupdate.helper.plist"
-    sudo rm -rf "/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper"
+function windowsize() {
+    osascript <<EOF
+    tell application "System Events"
+        if exists process "Telegram" then
+            tell process "Telegram"
+                repeat with w in windows
+                    set size of w to {1024, 720}
+                    delay 0.05
+                    set position of w to {768, 360}
+                end repeat
+            end tell
+        end if
+        if exists process "QQ" then
+            tell process "QQ"
+                repeat with w in windows
+                    set size of w to {1024, 720}
+                    delay 0.05
+                    set position of w to {768, 360}
+                end repeat
+            end tell
+        end if
+        if exists process "WeChat" then
+            tell process "WeChat"
+                repeat with w in windows
+                    set size of w to {1024, 720}
+                    delay 0.05
+                    set position of w to {768, 360}
+                end repeat
+            end tell
+        end if
+        if exists process "DingTalk" then
+            tell process "DingTalk"
+                repeat with w in windows
+                    set size of w to {1400, 850}
+                    delay 0.05
+                    set position of w to {580, 295}
+                end repeat
+            end tell
+        end if
+        if exists process "Feishu" then
+            tell process "Feishu"
+                repeat with w in windows
+                    set size of w to {1400, 850}
+                    delay 0.05
+                    set position of w to {580, 295}
+                end repeat
+            end tell
+        end if
+        if exists process "PhpStorm" then
+            tell process "PhpStorm"
+                repeat with w in windows
+                    set size of w to {2560, 1350}
+                    delay 0.05
+                    set position of w to {0, 0}
+                end repeat
+            end tell
+        end if
+        if exists process "Google Chrome" then
+            tell process "Google Chrome"
+                repeat with w in windows
+                    set size of w to {1720, 1080}
+                    delay 0.05
+                    set position of w to {680, 220}
+                end repeat
+            end tell
+        end if
+        if exists process "Code" then
+            tell process "Code"
+                repeat with w in windows
+                    set size of w to {1720, 1080}
+                    delay 0.05
+                    set position of w to {680, 220}
+                end repeat
+            end tell
+        end if
+    end tell
+EOF
 }
 
 function lslaunch() {
