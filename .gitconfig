@@ -34,7 +34,7 @@
     s = "!git status"
     f = "!git fetch"
     a = "!git add ."
-    c = "!git commit -S -m \"$(date '+%Y-%m-%d %H:%M:%S')\""
+    c = "!git commit -S -m \"chore(default): 📝 Commit at $(date '+%Y-%m-%d %H:%M:%S')\""
     p = "!git push"
     ac = "!git a && git c"
     cp = "!git c && git p"

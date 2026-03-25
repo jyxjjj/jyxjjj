@@ -1,15 +1,16 @@
 function listip() {
-    echo "Inet4:                                      $(curl -s https://api.ipify.org)"
-    echo "Inet6:                                      $(curl -s https://api6.ipify.org)"
-    echo "Internet:                                   $(curl -s https://www.desmg.com/api/IP)"
+    echo "Default Egress 4:      $(curl --max-time 2 -4 -s https://ifconfig.me)"
+    echo "Default Egress 6:      $(curl --max-time 2 -6 -s https://ifconfig.me)"
+    echo "Global Egress4:        $(curl --max-time 2 -4 -s https://www.desmg.com/api/IP)"
+    echo "Global Egress6:        $(curl --max-time 2 -6 -s https://www.desmg.com/api/IP)"
     echo "en0(Wi-Fi)             ($(ifconfig en0 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en0)"
     echo "en1(Thunderbolt 1)     ($(ifconfig en1 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en1)"
-    echo "en2(Thunderbolt 2)     ($(ifconfig en2 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en2)"
-    echo "en3(Thunderbolt 3)     ($(ifconfig en3 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en3)"
-    echo "en4(Ethernet Adaptor)  ($(ifconfig en4 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en4)"
-    echo "en5(Ethernet Adaptor)  ($(ifconfig en5 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en5)"
-    echo "en6(Ethernet Adapter)  ($(ifconfig en6 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en6)"
-    echo "en15(Ethernet Adapter) ($(ifconfig en15 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en15)"
+    echo "en6(Thunderbolt 2)     ($(ifconfig en6 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en6)"
+    echo "en2(Thunderbolt 3)     ($(ifconfig en2 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en2)"
+    echo "en3(Ethernet Adapter)  ($(ifconfig en3 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en3)"
+    echo "en4(Ethernet Adapter)  ($(ifconfig en4 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en4)"
+    echo "en5(Ethernet Adapter)  ($(ifconfig en5 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en5)"
+    echo "en7(Ethernet Adapter)  ($(ifconfig en7 | grep ether | awk '{print $2}')):  $(ipconfig getifaddr en7)"
 }
 
 function mountTMP() {

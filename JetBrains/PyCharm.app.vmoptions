@@ -18,3 +18,7 @@
 -Didea.system.path=~/www/JetBrains/PyCharm/system
 -Didea.plugins.path=~/www/JetBrains/PyCharm/config/plugins
 -Didea.log.path=~/www/JetBrains/PyCharm/system/log
+
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+-javaagent:/Users/jyxjjj/www/JetBrains/jetbra/ja-netfilter.jar=jetbrains

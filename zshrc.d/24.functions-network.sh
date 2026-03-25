@@ -45,6 +45,9 @@ function ZTstop() {
     if [[ $(ifconfig en0 | grep inet | awk '{print $2}') == "192.168.50.6" ]]; then
         ZTrouteSet
     fi
+    if [[ $(ifconfig en0 | grep inet | awk '{print $2}') == "192.168.50.8" ]]; then
+        ZTrouteSet
+    fi
 }
 
 function ZTstart() {
