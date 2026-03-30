@@ -20,7 +20,7 @@
 [user]
     name = jyxjjj
     email = 773933146@qq.com
-    signingKey = A86F2BF9569C54D0
+    signingKey = BABCAA7C9828DEE5
 [gpg]
     program = /usr/local/bin/gpg
 [commit]

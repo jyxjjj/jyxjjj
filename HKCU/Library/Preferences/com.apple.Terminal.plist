@@ -52,9 +52,9 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1432 116 281 559 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>435 485 1192 813 0 0 2560 1410 </string>
+	<string>855 108 1192 813 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>915 132 1192 813 0 0 2560 1410 </string>
+	<string>960 103 1192 813 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
 	<string>1312 60 1180 665 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow SSH-DESMG</key>
@@ -78,6 +78,8 @@
 	<integer>1</integer>
 	<key>TTInspector Selected Pane</key>
 	<string>Info</string>
+	<key>TTSettingsSnapshotSent</key>
+	<true/>
 	<key>Window Settings</key>
 	<dict>
 		<key>DESMG</key>
