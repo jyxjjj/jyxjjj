@@ -20,7 +20,7 @@ function mountTMP() {
             return 1
         fi
         touch "$LOCKFILE"
-        RAMDISK=$(hdiutil attach -nomount ram://2097152 2>/dev/null | xargs)
+        RAMDISK=$(hdiutil attach -nomount ram://8388608 2>/dev/null | xargs)
         echo "Creating RAM disk at $RAMDISK..."
         if [[ ! -b "$RAMDISK" ]]; then
             echo "Error: Failed to create RAM disk $RAMDISK."

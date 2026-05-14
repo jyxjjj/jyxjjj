@@ -10,6 +10,12 @@ BASE_DIR=$HOME/www/UserConfigs
 defaults delete com.apple.terminal NSOSPLastRootDirectory 2>/dev/null || true
 defaults delete com.apple.terminal LastTerminalStartTime 2>/dev/null || true
 defaults delete com.apple.terminal TTSettingsSnapshotSent 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindow Frame TTAppPreferences" 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindow Frame TTInspector" 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindow Frame TTWindow" 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindow Frame TTWindow DESMG" 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindow Frame TTWindow Novel" 2>/dev/null || true
+defaults delete com.apple.terminal "NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS" 2>/dev/null || true
 plutil -convert xml1 $HOME/Library/Preferences/com.apple.Terminal.plist -o $HOME/Library/Preferences/com.apple.Terminal.plist
 
 rsync $HOME/.zshrc $BASE_DIR/.zshrc

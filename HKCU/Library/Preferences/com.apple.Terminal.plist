@@ -47,18 +47,6 @@
 	<string>1318 214 800 448 0 0 2560 1409 </string>
 	<key>NSWindow Frame New Command Panel</key>
 	<string>471 667 499 128 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTAppPreferences</key>
-	<string>613 201 668 572 0 0 2560 1409 </string>
-	<key>NSWindow Frame TTInspector</key>
-	<string>1432 116 281 559 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTWindow</key>
-	<string>957 119 1192 813 0 0 2560 1410 </string>
-	<key>NSWindow Frame TTWindow DESMG</key>
-	<string>924 84 1192 813 0 0 2560 1410 </string>
-	<key>NSWindow Frame TTWindow Novel</key>
-	<string>1312 60 1180 665 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTWindow SSH-DESMG</key>
-	<string>1261 174 1180 799 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0899999999999999</real>
 	<key>SecureKeyboardEntry</key>

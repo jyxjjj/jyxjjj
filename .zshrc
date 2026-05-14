@@ -5,9 +5,13 @@ autoload -U bashcompinit && bashcompinit
 
 setopt histignoredups
 setopt histignorealldups
+setopt histignorespace
 setopt appendhistory
 setopt sharehistory
 setopt promptsubst
+
+export HISTSIZE=50
+export SAVEHIST=50
 
 export LESSHISTFILE=/dev/null
 export LANG="en_US.UTF-8"

@@ -20,3 +20,5 @@ alias sha256='openssl dgst -hex -sha256'
 alias sha512='openssl dgst -hex -sha512'
 
 alias rsync='rsync -cDhlrtUz'
+
+alias 7z='7zz a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhc=on -mmt=on -mqs=on'
