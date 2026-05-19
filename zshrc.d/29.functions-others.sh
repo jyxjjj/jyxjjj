@@ -1,11 +1,5 @@
 function DeviceAge() {
-    local BIRTH_TS
-    if [[ $(hostname) == "DESMG-MBP-1" ]]; then
-        BIRTH_TS=1642576960
-    fi
-    if [[ $(hostname) == "DESMG-MBP-2" ]]; then
-        BIRTH_TS=1773878400
-    fi
+    local BIRTH_TS=1773878400
     local NOW_TS=$(date +%s)
     local BIRTH=$(date -j -f "%s" "$BIRTH_TS" "+%Y-%m-%d %H:%M:%S")
 

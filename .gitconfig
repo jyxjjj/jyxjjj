@@ -45,6 +45,7 @@
     e = "!code .git/config"
     clearconfig = "!> .git/config"
     clearhooks = "!rm -f .git/hooks/*"
-	l = "!git log --color --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(yellow)================================================================%C(reset)\n%C(cyan)[%ad] [%H]%d%C(reset)\n%C(green)%an <%ae>%C(reset)\n%C(magenta)%s%C(reset)\n%b\n'"
+    l = "!git log --color --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(yellow)================================================================%C(reset)\n%C(cyan)[%ad] [%H]%d%C(reset)\n%C(green)%an <%ae>%C(reset)\n%C(magenta)%s%C(reset)\n%b\n'"
     new = "!git init && git clearconfig && git clearhooks && git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && git config branch.main.remote origin && git config branch.main.merge refs/heads/main"
     url = "!git config remote.origin.url"
+
