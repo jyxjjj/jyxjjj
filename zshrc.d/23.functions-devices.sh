@@ -20,7 +20,7 @@ function mountTMP() {
             return 1
         fi
         touch "$LOCKFILE"
-        RAMDISK=$(hdiutil attach -nomount ram://8388608 2>/dev/null | xargs)
+        RAMDISK=$(hdiutil attach -nomount ram://33554432 2>/dev/null | xargs)
         echo "Creating RAM disk at $RAMDISK..."
         if [[ ! -b "$RAMDISK" ]]; then
             echo "Error: Failed to create RAM disk $RAMDISK."
@@ -46,3 +46,7 @@ function unmountTMP() {
 }
 
 mountTMP
+mkdir -p /Volumes/TMP/Codex
+mkdir -p /Volumes/TMP/Codex/{.tmp,browser,cache,dictation-history,node_repl,shell_snapshots,tmp,visualizations}
+touch /Volumes/TMP/Codex/transcription-history.jsonl
+mkdir -p /Volumes/TMP/GoCache

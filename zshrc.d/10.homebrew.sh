@@ -4,6 +4,7 @@
 export HOMEBREW_EDITOR='code'
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_DOWNLOAD_CONCURRENCY=8
+export HOMEBREW_REQUIRE_TAP_TRUST=1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 function removeMAU() {

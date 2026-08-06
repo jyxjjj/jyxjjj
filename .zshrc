@@ -29,6 +29,12 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+TMOUT=1
+
+TRAPALRM() {
+    zle && zle reset-prompt
+}
+
 PROMPT=$'
 %{%F{cyan}%}================================%{%f%}
 [%D{%H:%M:%S}] [%{%F{yellow}%}%?%{%f%}]

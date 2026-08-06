@@ -7,9 +7,8 @@ alias rm='rm -i'
 
 alias grep='grep --color=auto'
 
-alias tbw='smartctl -A disk0 | grep "Data Units Written"'
-
 alias free='vm_stat'
+alias tbw='smartctl -A disk0 | grep "Data Units Written"'
 
 alias ffmpeg='ffmpeg -hide_banner'
 alias ffplay='ffplay -hide_banner'
@@ -19,6 +18,8 @@ alias sha1='openssl dgst -hex -sha1'
 alias sha256='openssl dgst -hex -sha256'
 alias sha512='openssl dgst -hex -sha512'
 
-alias rsync='rsync -cDhlrtUz'
-
 alias 7z='7zz a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhc=on -mmt=on -mqs=on'
+
+alias aria2='aria2c -c -s16 -x16 -k4M -t10 -m10 --retry-wait=1 --file-allocation=none'
+
+alias rsync='rsync -cDhlrtUz'
