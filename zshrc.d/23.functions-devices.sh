@@ -46,7 +46,4 @@ function unmountTMP() {
 }
 
 mountTMP
-mkdir -p /Volumes/TMP/Codex
-mkdir -p /Volumes/TMP/Codex/{.tmp,browser,cache,dictation-history,node_repl,shell_snapshots,tmp,visualizations}
-touch /Volumes/TMP/Codex/transcription-history.jsonl
 mkdir -p /Volumes/TMP/GoCache

@@ -5,7 +5,10 @@ export LLAMA_ARG_CACHE_TYPE_K=f16
 export LLAMA_ARG_CACHE_TYPE_V=f16
 export LLAMA_MODELS_MAX=1
 export LLAMA_ARG_N_PARALLEL=1
+export LLAMA_ARG_CTX_SIZE=16384
 export LLAMA_ARG_HOST=127.0.0.1
 export LLAMA_ARG_PORT=11434
 alias llama-cli='llama-cli --temp 0.1'
 alias llama-server='llama-server --temp 0.1'
+
+mkdir -p /Volumes/TMP/Codex/{.tmp,attachments,browser,cache,dictation-history,generated_images,node_repl,shell_snapshots,tmp,visualizations}
