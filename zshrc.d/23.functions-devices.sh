@@ -46,4 +46,31 @@ function unmountTMP() {
 }
 
 mountTMP
-mkdir -p /Volumes/TMP/GoCache
+
+function isRAMDisk() {
+    local dev
+
+    dev=$(df -P "$1" 2>/dev/null | awk 'NR == 2 { print $1 }') || return 1
+    [[ -n "$dev" ]] || return 1
+
+    hdiutil info | awk -v dev="$dev" '
+        function check() {
+            if (ram && matched)
+                found = 1
+        }
+
+        /^=+$/ {
+            check()
+            ram = matched = 0
+            next
+        }
+
+        $1 == "image-path" && $3 ~ /^ram:\/\// { ram = 1 }
+        $1 == dev { matched = 1 }
+
+        END {
+            check()
+            exit !found
+        }
+    '
+}
