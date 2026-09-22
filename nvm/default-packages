@@ -1,3 +1,4 @@
-npm-check-updates
-pdfkit
-@github/copilot
+@serverless-devs/s@3.1.10
+npm-check-updates@23.1.0
+pdfkit@0.20.2
+
