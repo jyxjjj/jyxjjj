@@ -37,6 +37,8 @@ rsync $HOME/www/JetBrains/*.app.vmoptions $BASE_DIR/JetBrains
 
 rsync $HOME/Library/Preferences/com.apple.Terminal.plist $BASE_DIR/HKCU/Library/Preferences/com.apple.Terminal.plist
 
+rsync --delete $HOME/Library/Services/ $BASE_DIR/HKCU/Library/Services/
+
 rsync /Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist $BASE_DIR/HKLM/Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist
 
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then

@@ -12,7 +12,6 @@ alias llama-cli='llama-cli --temp 0.1'
 alias llama-server='llama-server --temp 0.1'
 
 mkdir -p \
-    /Volumes/TMP/Codex/.tmp \
     /Volumes/TMP/Codex/tmp \
     /Volumes/TMP/Codex/TMPDIR \
     /Volumes/TMP/Codex/node_repl \
@@ -23,6 +22,7 @@ mkdir -p \
     /Volumes/TMP/Codex/browser \
     /Volumes/TMP/Codex/cache \
     /Volumes/TMP/Codex/dictation-history \
+    '/Volumes/TMP/Codex/Library/Logs/com.openai.codex' \
     '/Volumes/TMP/Codex/Library/Caches/Codex' \
     '/Volumes/TMP/Codex/Library/Application Support/Codex'
 
@@ -55,8 +55,8 @@ function lnCodex() {
 
     _lnCodex '/Volumes/TMP/Codex/Library/Application Support/Codex' "$HOME/Library/Application Support/Codex"
     _lnCodex '/Volumes/TMP/Codex/Library/Caches/Codex' "$HOME/Library/Caches/Codex"
+    _lnCodex '/Volumes/TMP/Codex/Library/Logs/com.openai.codex' "$HOME/Library/Logs/com.openai.codex"
 
-    _lnCodex '/Volumes/TMP/Codex/.tmp' "$HOME/.codex/.tmp"
     _lnCodex '/Volumes/TMP/Codex/attachments' "$HOME/.codex/attachments"
     _lnCodex '/Volumes/TMP/Codex/browser' "$HOME/.codex/browser"
     _lnCodex '/Volumes/TMP/Codex/cache' "$HOME/.codex/cache"
