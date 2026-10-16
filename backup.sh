@@ -29,6 +29,8 @@ rsync $HOME/.ssh/config $BASE_DIR/.ssh/config
 
 rsync $HOME/.gitconfig $BASE_DIR/.gitconfig
 
+rsync $HOME/.markdownlint.json $BASE_DIR/.markdownlint.json
+
 rsync $HOME/www/nvm/default-packages $BASE_DIR/nvm/default-packages
 
 rsync $HOME/.npmrc $BASE_DIR/.npmrc

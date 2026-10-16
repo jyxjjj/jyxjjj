@@ -24,6 +24,10 @@ mkdir -p \
     /Volumes/TMP/Codex/dictation-history \
     '/Volumes/TMP/Codex/Library/Logs/com.openai.codex' \
     '/Volumes/TMP/Codex/Library/Caches/Codex' \
+    '/Volumes/TMP/Codex/Library/Caches/com.openai.codex' \
+    '/Volumes/TMP/Codex/Library/Caches/com.openai.chat' \
+    '/Volumes/TMP/Codex/Library/Caches/com.openai.sky.CUAService' \
+    '/Volumes/TMP/Codex/Library/Caches/com.openai.sky.CUAService.cli' \
     '/Volumes/TMP/Codex/Library/Application Support/Codex'
 
 function lnCodex() {
@@ -55,6 +59,10 @@ function lnCodex() {
 
     _lnCodex '/Volumes/TMP/Codex/Library/Application Support/Codex' "$HOME/Library/Application Support/Codex"
     _lnCodex '/Volumes/TMP/Codex/Library/Caches/Codex' "$HOME/Library/Caches/Codex"
+    _lnCodex '/Volumes/TMP/Codex/Library/Caches/com.openai.codex' "$HOME/Library/Caches/com.openai.codex"
+    _lnCodex '/Volumes/TMP/Codex/Library/Caches/com.openai.chat' "$HOME/Library/Caches/com.openai.chat"
+    _lnCodex '/Volumes/TMP/Codex/Library/Caches/com.openai.sky.CUAService' "$HOME/Library/Caches/com.openai.sky.CUAService"
+    _lnCodex '/Volumes/TMP/Codex/Library/Caches/com.openai.sky.CUAService.cli' "$HOME/Library/Caches/com.openai.sky.CUAService.cli"
     _lnCodex '/Volumes/TMP/Codex/Library/Logs/com.openai.codex' "$HOME/Library/Logs/com.openai.codex"
 
     _lnCodex '/Volumes/TMP/Codex/attachments' "$HOME/.codex/attachments"
