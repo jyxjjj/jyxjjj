@@ -1,0 +1,7 @@
+interface:
+  display_name: "ADHD 模式 / ADHD Mode"
+  short_description: "仅在明确点名时启用 ADHD 模式 / Explicit invocation only"
+  default_prompt: "使用 $i-have-adhd 开始 ADHD 模式（Start ADHD mode）。"
+
+policy:
+  allow_implicit_invocation: false

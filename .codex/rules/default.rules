@@ -1,0 +1,6 @@
+prefix_rule(pattern=["go", "vet", "./..."], decision="allow")
+prefix_rule(pattern=["go", "fmt", "./..."], decision="allow")
+prefix_rule(pattern=["git", "add"], decision="allow")
+prefix_rule(pattern=["git", "diff"], decision="allow")
+prefix_rule(pattern=["php", "-l"], decision="allow")
+prefix_rule(pattern=["git", "mv"], decision="allow")

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git 提交"
+  short_description: "按自定义 Conventional Commits 规范生成完整提交信息"
+  default_prompt: "使用 $git-commit 根据已确认的改动生成符合我的 Conventional Commits 规范的完整 Git 提交信息。"

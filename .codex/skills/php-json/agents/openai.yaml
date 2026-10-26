@@ -1,0 +1,4 @@
+interface:
+  display_name: "PHP JSON 处理"
+  short_description: "编写 PHP JSON 调用时不使用异常，审核时关注有上下文依据的数组键访问问题。"
+  default_prompt: "使用 $php-json 编写或审核 PHP，遵循 JSON 调用不使用异常的约定，仅依据实际上下文指出解码后的数组键访问问题。"

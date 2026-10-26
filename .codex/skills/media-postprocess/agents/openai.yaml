@@ -1,0 +1,4 @@
+interface:
+  display_name: "图片、音频、视频后处理"
+  short_description: "清理图片、音频和视频中可去除的元数据，保留指定信息并确认删除风险。"
+  default_prompt: "使用 $media-postprocess 处理这些媒体文件，清理元数据并保留指定信息。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "技能编写规则"
+  short_description: "手工创建、修改或审查技能，整理触发描述、内容组织与人工检查规则"
+  default_prompt: "使用 $skill-creator-rules 手工创建或修改技能，并检查内容与任务范围。"

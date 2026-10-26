@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple 存储检查"
+  short_description: "仅为自有 Apple 项目输出只读存储检查命令"
+  default_prompt: "使用 $apple-storage-hygiene 为当前由我拥有或明确负责维护的 Apple 项目生成带真实 bundle identifier 和相关存储标识的简短只读检查脚本调用命令，但不要替我运行。"

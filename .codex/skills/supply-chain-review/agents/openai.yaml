@@ -1,0 +1,4 @@
+interface:
+  display_name: "供应链审核"
+  short_description: "核查软件依赖与软件包的来源、发布内容和恶意替换风险，为选用提供依据"
+  default_prompt: "使用 $supply-chain-review 审核候选依赖、更新列表或执行输出，并给出引入、升级或推荐结论。"

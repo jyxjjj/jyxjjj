@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub PR 审核"
+  short_description: "审核 GitHub PR 改动，按照自定义规则检查问题并整理审核意见"
+  default_prompt: "使用 $github-pr-review 审核指定的 GitHub PR。"

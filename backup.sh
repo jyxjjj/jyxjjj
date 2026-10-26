@@ -21,6 +21,11 @@ plutil -convert xml1 $HOME/Library/Preferences/com.apple.Terminal.plist -o $HOME
 rsync $HOME/.zshrc $BASE_DIR/.zshrc
 rsync --delete $HOME/zshrc.d/ $BASE_DIR/zshrc.d/
 
+rsync --delete $HOME/.codex/rules/ $BASE_DIR/.codex/rules/
+rsync --delete $HOME/.codex/pets/ $BASE_DIR/.codex/pets/
+rsync --delete --exclude='/.system/' $HOME/.codex/skills/ $BASE_DIR/.codex/skills/
+rsync $HOME/.codex/AGENTS.md $BASE_DIR/.codex/AGENTS.md
+
 rsync $HOME/.gnupg/gpg-agent.conf $BASE_DIR/.gnupg/gpg-agent.conf
 rsync $HOME/.gnupg/gpg.conf $BASE_DIR/.gnupg/gpg.conf
 rsync $HOME/.gnupg/dirmngr.conf $BASE_DIR/.gnupg/dirmngr.conf
