@@ -1,0 +1,4 @@
+interface:
+  display_name: "注释与文档"
+  short_description: "生成、清理和精简注释与文档，控制重复说明、信息归属与修改范围"
+  default_prompt: "使用 $gen-comments-and-docs 生成、清理或精简指定范围内的注释与文档。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "研发沟通"
+  short_description: "代拟或润色面向同事、用户或队友的研发交流内容，结论优先且简短直接"
+  default_prompt: "使用 $dev-communication 代拟或润色面向同事、用户或队友的研发交流内容，保留事实、结论和下一步动作。"
