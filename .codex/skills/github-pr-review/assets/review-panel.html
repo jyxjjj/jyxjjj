@@ -1,0 +1,141 @@
+<!-- 填充下方 JSON 后通过 visualize 展示
+prs 每项包含 repository、number、summary、body、action、selected
+action 使用 approve-only、approve-comment、changes 或 comment
+models 每项包含 display_name 和 supported_reasoning_levels，后者每项包含 effort
+model 和 level 为预选署名，JSON 字符串中的小于号编码为 \u003c
+-->
+<div id="github-pr-review-panel">
+    <div class="table-responsive">
+        <table class="table table-sm" style="min-width:640px">
+            <caption class="sr-only">PR 审核提交</caption>
+            <colgroup><col style="width:28%"><col style="width:30%"><col style="width:42%"></colgroup>
+            <thead><tr><th scope="col">PR</th><th scope="col">提交方式</th><th scope="col">审核结果</th></tr></thead>
+            <tbody data-rows></tbody>
+        </table>
+    </div>
+    <div class="viz-controls" style="margin-top:16px">
+        <label class="form-label">Model<select class="form-select" data-model></select></label>
+        <label class="form-label">Level<select class="form-select" data-level></select></label>
+    </div>
+    <div style="margin-top:16px"><button class="btn btn-primary" type="button" data-submit disabled>提交所选 0 个 PR</button></div>
+    <p class="text-small" data-status aria-live="polite" style="margin-top:8px"></p>
+</div>
+<script type="application/json" id="github-pr-review-data">
+{"prs":[],"models":[],"model":"","level":""}
+</script>
+<script>
+(() => {
+    const root = document.getElementById('github-pr-review-panel')
+    const data = JSON.parse(document.getElementById('github-pr-review-data').textContent)
+    const model = root.querySelector('[data-model]')
+    const level = root.querySelector('[data-level]')
+    const submit = root.querySelector('[data-submit]')
+    const status = root.querySelector('[data-status]')
+    const actions = { 'approve-only': 'Approve Only', 'approve-comment': 'Approve with Comment', changes: 'Request Changes', comment: 'Comment Only' }
+    const identity = JSON.stringify(data.prs.map(pr => [pr.repository, pr.number, pr.summary, pr.body, pr.action, pr.selected]))
+    const rows = []
+    function options(select, entries) {
+        select.replaceChildren(...entries.map(([value, label]) => {
+            const option = document.createElement('option')
+            option.value = value
+            option.textContent = label
+            return option
+        }))
+    }
+    for (const pr of data.prs) {
+        const row = document.createElement('tr')
+        row.innerHTML = '<td><label class="form-check"><input class="form-check-input" type="checkbox"><span class="form-check-label"></span></label></td><td><select class="form-select"></select></td><td><textarea class="form-control" rows="2" cols="24"></textarea></td>'
+        const checkbox = row.querySelector('input')
+        const action = row.querySelector('select')
+        const body = row.querySelector('textarea')
+        checkbox.checked = pr.selected
+        checkbox.setAttribute('aria-label', '提交 ' + pr.repository + '#' + pr.number)
+        row.querySelector('span').textContent = 'PR #' + pr.number + ' · ' + pr.summary
+        options(action, Object.entries(actions))
+        action.value = pr.action
+        action.setAttribute('aria-label', pr.repository + '#' + pr.number + ' 提交方式')
+        body.value = pr.body
+        body.setAttribute('aria-label', pr.repository + '#' + pr.number + ' 审核结果')
+        root.querySelector('[data-rows]').append(row)
+        rows.push({ pr, checkbox, action, body })
+    }
+    options(model, [['', '选择模型'], ...data.models.map(item => [item.display_name, item.display_name])])
+    model.value = data.model
+    function renderLevels(preferred) {
+        const entry = data.models.find(item => item.display_name === model.value)
+        const levels = entry ? entry.supported_reasoning_levels.map(item => item.effort) : []
+        options(level, [['', '选择强度'], ...levels.map(value => [value, value.charAt(0).toUpperCase() + value.slice(1)])])
+        level.disabled = !entry
+        if (levels.includes(preferred)) level.value = preferred
+    }
+    function snapshot() {
+        return { identity, model: model.value, level: level.value, prs: rows.map(({ pr, checkbox, action, body }) => ({ repository: pr.repository, number: pr.number, selected: checkbox.checked, action: action.value, body: body.value })) }
+    }
+    function render() {
+        const count = rows.filter(row => row.checkbox.checked).length
+        submit.textContent = '提交所选 ' + count + ' 个 PR'
+        submit.disabled = count === 0
+        for (const row of rows) row.body.disabled = row.action.value === 'approve-only'
+    }
+    function save() {
+        window.openai?.setWidgetState({ modelContent: snapshot(), privateContent: null }).catch(() => {})
+    }
+    function restore(state) {
+        const saved = state?.modelContent
+        if (saved?.identity !== identity || !Array.isArray(saved.prs)) return
+        if (saved.model === '' || data.models.some(item => item.display_name === saved.model)) model.value = saved.model
+        renderLevels(saved.level)
+        for (const row of rows) {
+            const pr = saved.prs.find(item => item.repository === row.pr.repository && item.number === row.pr.number)
+            if (!pr) continue
+            row.checkbox.checked = pr.selected === true
+            if (Object.hasOwn(actions, pr.action)) row.action.value = pr.action
+            if (typeof pr.body === 'string') row.body.value = pr.body
+        }
+        render()
+    }
+    root.addEventListener('input', () => {
+        status.textContent = ''
+        render()
+    })
+    root.addEventListener('change', event => {
+        if (event.target === model) renderLevels(level.value)
+        render()
+        save()
+    })
+    submit.addEventListener('click', async () => {
+        const state = snapshot()
+        const selected = state.prs.filter(pr => pr.selected)
+        if (selected.some(pr => pr.action !== 'approve-only') && (!state.model || !state.level)) {
+            status.textContent = '请选择 Model 和 Level'
+            return
+        }
+        const empty = selected.find(pr => pr.action !== 'approve-only' && !pr.body.trim())
+        if (empty) {
+            status.textContent = '请填写 ' + empty.repository + '#' + empty.number + ' 的审核结果'
+            return
+        }
+        if (!window.openai?.sendFollowUpMessage) {
+            status.textContent = '当前环境不支持发送消息，请在对话中确认提交'
+            return
+        }
+        const payload = selected.map(pr => ({ repository: pr.repository, number: pr.number, action: actions[pr.action], body: pr.action === 'approve-only' ? '' : pr.body, signature: pr.action === 'approve-only' ? null : state.model + ' ' + level.selectedOptions[0].textContent }))
+        const prompt = '同意提交以下 PR 审核，请使用 GitHub 连接器按各项提交方式、正文和署名执行，并逐项报告结果。Model 和 Level 仅用于署名。\n\n' + JSON.stringify(payload, null, 2)
+        save()
+        try {
+            submit.disabled = true
+            status.textContent = '等待发送提交指令'
+            await window.openai.sendFollowUpMessage({ prompt, title: '提交所选 ' + selected.length + ' 个 PR 审核' })
+            status.textContent = '发送请求已完成，发布结果以对话回复为准'
+        } catch {
+            status.textContent = '消息发送未完成'
+        } finally {
+            render()
+        }
+    })
+    renderLevels(data.level)
+    render()
+    restore(window.openai?.widgetState)
+    window.addEventListener('openai:set_globals', event => restore(event.detail?.globals?.widgetState))
+})()
+</script>
