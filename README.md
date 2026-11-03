@@ -10,11 +10,7 @@ this is a branch but actually a repository that can be aliased as `DOT Files`.
 |---|---|
 | `.codex/AGENTS.md` | CC BY-NC-ND 4.0 |
 | `.codex/skills/` 及其全部内容 | CC BY-NC-ND 4.0 |
-| `.codex/pets/` 及其全部内容 | AGPL-3.0 |
-| `.codex/rules/` 及其全部内容 | AGPL-3.0 |
-| `.codex/` 之外的仓库内容 | AGPL-3.0 |
-
-`.codex/` 下未来新增的其他文件和目录，其授权方式另行明确，不自动归入上述范围。
+| 其他内容 | AGPL-3.0 |
 
 ### GNU Affero General Public License v3.0
 
