@@ -1,0 +1,4 @@
+interface:
+  display_name: "SubAgent 启动前检查与配置"
+  short_description: "用户明确要求使用 SubAgent 时调用"
+  default_prompt: "使用 $before-fork-subagent 处理本次 SubAgent 委派。"

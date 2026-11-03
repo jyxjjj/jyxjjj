@@ -1,0 +1,4 @@
+interface:
+  display_name: "浏览器委派"
+  short_description: "按用户授权流程委派独立 Agent，选择 Chrome 并优先连接已有页面"
+  default_prompt: "使用 $browser-operation 按授权流程处理当前浏览器任务。"

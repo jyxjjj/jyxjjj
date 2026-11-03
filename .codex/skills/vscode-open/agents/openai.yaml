@@ -1,3 +1,4 @@
 interface:
   display_name: "使用 VS Code 打开"
   short_description: "使用 VS Code 打开项目、文件夹、文件或执行 code 命令"
+  default_prompt: "使用 $vscode-open 在 VS Code 中打开指定项目、文件夹或文件。"
