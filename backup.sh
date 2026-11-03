@@ -48,6 +48,8 @@ rsync --delete $HOME/Library/Services/ $BASE_DIR/HKCU/Library/Services/
 
 rsync /Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist $BASE_DIR/HKLM/Library/LaunchDaemons/com.desmg.zshrc_Apple_Terminal_Remover.plist
 
+"$BASE_DIR/copyright.sh"
+
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
     code $BASE_DIR/
 fi
