@@ -22,6 +22,14 @@ mkdir -p \
     /Volumes/TMP/Codex/browser \
     /Volumes/TMP/Codex/cache \
     /Volumes/TMP/Codex/dictation-history \
+    /Volumes/TMP/Codex/thread-writer-locks \
+    /Volumes/TMP/Codex/tui-thread-reference-capabilities \
+    /Volumes/TMP/Codex/packages \
+    /Volumes/TMP/Codex/project-metadata-locks \
+    /Volumes/TMP/Codex/code-review-plugin \
+    /Volumes/TMP/Codex/app-server-daemon \
+    /Volumes/TMP/Codex/app-server-control \
+    /Volumes/TMP/Codex/automations \
     '/Volumes/TMP/Codex/Library/Logs/com.openai.codex' \
     '/Volumes/TMP/Codex/Library/Caches/Codex' \
     '/Volumes/TMP/Codex/Library/Caches/com.openai.codex' \
@@ -73,6 +81,14 @@ function lnCodex() {
     _lnCodex '/Volumes/TMP/Codex/node_repl' "$HOME/.codex/node_repl"
     _lnCodex '/Volumes/TMP/Codex/shell_snapshots' "$HOME/.codex/shell_snapshots"
     _lnCodex '/Volumes/TMP/Codex/tmp' "$HOME/.codex/tmp"
+    _lnCodex '/Volumes/TMP/Codex/thread-writer-locks' "$HOME/.codex/thread-writer-locks"
+    _lnCodex '/Volumes/TMP/Codex/tui-thread-reference-capabilities' "$HOME/.codex/tui-thread-reference-capabilities"
+    _lnCodex '/Volumes/TMP/Codex/packages' "$HOME/.codex/packages"
+    _lnCodex '/Volumes/TMP/Codex/project-metadata-locks' "$HOME/.codex/project-metadata-locks"
+    _lnCodex '/Volumes/TMP/Codex/code-review-plugin' "$HOME/.codex/code-review-plugin"
+    _lnCodex '/Volumes/TMP/Codex/app-server-daemon' "$HOME/.codex/app-server-daemon"
+    _lnCodex '/Volumes/TMP/Codex/app-server-control' "$HOME/.codex/app-server-control"
+    _lnCodex '/Volumes/TMP/Codex/automations' "$HOME/.codex/automations"
 
     _lnCodex '/Volumes/TMP/Codex/goals_1.sqlite' "$HOME/.codex/goals_1.sqlite"
     _lnCodex '/Volumes/TMP/Codex/goals_1.sqlite-shm' "$HOME/.codex/goals_1.sqlite-shm"
