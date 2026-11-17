@@ -22,4 +22,5 @@ alias 7z='7zz a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhc=on -mmt=on -mqs
 
 alias aria2='aria2c -c -s16 -x16 -k4M -t10 -m10 --retry-wait=1 --file-allocation=none'
 
-alias rsync='rsync -cDhlrtUz'
+alias rsync='rsync -cDhlrtz'
+
